@@ -1,0 +1,118 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--color-accent);
+  z-index: -1;
+}
+
+.about-image img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+}
+
+.about-info p {
+  margin-bottom: 1.5rem;
+}
+
+.personal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label {
+  font-weight: 700;
+  color: var(--color-gray-dark);
+  margin-bottom: 0.3rem;
+}
+
+.info-value {
+  font-weight: 500;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  margin-bottom: 1rem;
+  /* Reduce margin now that we use grid */
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-weight: 600;
+}
+
+.skill-percentage {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-gray);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 10px;
+  width: 0;
+  transition: width 1s ease;
+}
+
+
+@media (max-width: 960px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .personal-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

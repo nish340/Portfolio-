@@ -1,0 +1,138 @@
+.blog-page {
+  min-height: 100vh;
+}
+
+.blog-section {
+  padding: 4rem 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.blog-category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-top-right-radius: 8px;
+}
+
+.blog-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.blog-info h3 {
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.blog-info p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.blog-author {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.read-more {
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover {
+  color: #2980b9;
+}
+
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-button {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-button:hover {
+  background-color: #f5f5f5;
+}
+
+.filter-button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-container {
+    justify-content: center;
+  }
+}

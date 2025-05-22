@@ -1,0 +1,400 @@
+.hero-section {
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  background: linear-gradient(to right, #f5f5f5 50%, #ffffff 50%);
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--color-gray-dark);
+}
+
+.highlight {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background-color: rgba(107, 99, 255, 0.2);
+  z-index: -1;
+  transform: translateY(-3px);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  border: 10px solid white;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.featured-projects {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.view-all-projects {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.featured-project {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+}
+
+.featured-project:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.featured-project:nth-child(1) .project-image {
+  background-image: url('../assets/images/project2.png');
+}
+
+.featured-project:nth-child(2) .project-image {
+  background-image: url('../assets/images/platypus.png');
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  margin-bottom: 1.5rem;
+  color: var(--color-gray-dark);
+}
+
+.about-preview {
+  background-color: var(--color-gray-light);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Gallery Preview Section */
+.gallery-preview {
+  background-color: #fff;
+}
+
+.gallery-preview-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-preview-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-preview-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 180px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-preview-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-preview-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-preview-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.5), transparent);
+  padding: 1.2rem;
+  color: white;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.gallery-preview-item:hover .gallery-preview-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+  padding-bottom: 1.5rem;
+}
+
+.gallery-preview-project {
+  font-weight: 600;
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.gallery-preview-link {
+  margin-top: 1rem;
+}
+
+@media (max-width: 960px) {
+  .gallery-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact Preview Section */
+.contact-preview {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+.contact-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.contact-preview-info p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-preview-details {
+  margin-bottom: 2rem;
+}
+
+.contact-preview-item {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.contact-preview-form-container {
+  background-color: var(--color-gray-light);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-preview-form .form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.contact-preview-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contact-preview-form input,
+.contact-preview-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.contact-preview-form input:focus,
+.contact-preview-form textarea:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+.contact-preview-form input.error,
+.contact-preview-form textarea.error {
+  border-color: #ff4d4d;
+}
+
+.contact-preview-form .error-message {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  position: absolute;
+  bottom: -20px;
+}
+
+.contact-preview-form .submit-btn {
+  width: 100%;
+  padding: 1rem;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3498db;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
+.chat-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+@media (max-width: 960px) {
+  .hero-section {
+    background: var(--color-gray-light);
+    height: auto;
+    padding: 120px 0 60px;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    margin: 0 auto 2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .image-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-preview-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-projects {
+    flex-direction: column;
+  }
+
+  .featured-project {
+    margin-bottom: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
