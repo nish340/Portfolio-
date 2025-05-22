@@ -33,16 +33,16 @@ const Footer = () => {
             <div className="social-links">
               <h4>Connect</h4>
               <div className="social-icons">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/nish340" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <i className="social-icon github"></i>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/nishchay-sharma-64b0661b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <i className="social-icon linkedin"></i>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <a href="https://x.com/Nishchay" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                   <i className="social-icon twitter"></i>
                 </a>
-                <a href="mailto:hello@johndoe.com" aria-label="Email">
+                <a href="mailto:nishchay340@gmail.com" aria-label="Email">
                   <i className="social-icon email"></i>
                 </a>
               </div>
