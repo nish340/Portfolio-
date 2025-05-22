@@ -6,8 +6,9 @@ A modern, responsive portfolio website built with React and TypeScript.
 
 - **Responsive Design**: Fully responsive layout that works on all devices
 - **Modern UI**: Clean and professional user interface with smooth animations
-- **Multiple Pages**: Home, About, Projects, Blog, Chat, Testimonials, and Contact pages
+- **Multiple Pages**: Home, About, Projects, Gallery, Blog, Chat, Testimonials, and Contact pages
 - **Project Showcase**: Filterable projects grid with categories
+- **Project Gallery**: Visual showcase of project screenshots with filtering by project
 - **Blog Section**: Categorized blog posts with filtering capability
 - **Chat Functionality**: Real-time chat interface for direct communication
 - **Testimonials**: Display client testimonials and feedback
@@ -16,7 +17,7 @@ A modern, responsive portfolio website built with React and TypeScript.
 ## Pages
 
 ### Home
-The landing page featuring a hero section, featured projects, and a brief about section. Includes a floating chat icon for quick access to the chat feature.
+The landing page featuring a hero section, featured projects, a gallery preview, and a brief about section. Includes a floating chat icon for quick access to the chat feature.
 
 ### About
 Detailed information about the developer, including skills, experience, and background.
@@ -26,6 +27,9 @@ A filterable grid of projects with details such as technologies used, descriptio
 
 ### Blog
 A collection of blog posts categorized by topics like Development, Design, Performance, and Accessibility.
+
+### Gallery
+A visual showcase of project screenshots organized by project, with a lightbox view for detailed examination.
 
 ### Chat
 A messaging interface for direct communication with visitors.
