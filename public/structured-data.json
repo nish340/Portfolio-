@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://nishchaysharma.com/#website",
+      "url": "https://nishchaysharma.com/",
+      "name": "Nishchay Sharma - Full Stack Developer",
+      "description": "Professional Full Stack Developer specializing in MERN and MEAN stack development",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://nishchaysharma.com/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nishchaysharma.com/#person",
+      "name": "Nishchay Sharma",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://nishchaysharma.com/#personImage",
+        "inLanguage": "en-US",
+        "url": "https://nishchaysharma.com/profile-image.jpg",
+        "contentUrl": "https://nishchaysharma.com/profile-image.jpg",
+        "caption": "Nishchay Sharma"
+      },
+      "description": "Full Stack Developer with 2.5+ years of experience in MERN and MEAN stack development",
+      "sameAs": [
+        "https://github.com/nish340",
+        "https://www.linkedin.com/in/nishchay-sharma-64b0661b3/",
+        "https://x.com/52Nishchay"
+      ],
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "knowsAbout": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "Full Stack Development",
+        "Web Development"
+      ]
+    }
+  ]
+}

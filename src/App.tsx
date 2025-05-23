@@ -8,7 +8,9 @@ import Projects from "./pages/Projects";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Blog from "./pages/Blog";
 import "./App.css";
+import Testimonials from "./pages/Testimonials";
 
 const App = () => {
   return (
@@ -22,7 +24,9 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
       </main>
       <Footer />
