@@ -22,5 +22,4 @@ jobs:
             npm install
             npm run build
             pm2 delete portfolio || true
-            pm2 serve dist 80 --name "portfolio"
-
+            pm2 start dist/index.js --name "portfolio"
