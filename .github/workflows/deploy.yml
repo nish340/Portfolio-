@@ -22,4 +22,4 @@ jobs:
             npm install
             npm run build
             pm2 delete portfolio || true
-            pm2 serve dist 3000 --name "portfolio"
+            pm2 serve dist 3000 --name "portfolio" --spa
