@@ -23,10 +23,10 @@ const Home = () => {
     email: '',
     message: '',
   });
-  
+
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<{success: boolean; message: string} | null>(null);
+  const [submitStatus, setSubmitStatus] = useState<{ success: boolean; message: string } | null>(null);
 
   // Get featured projects (first two)
   const featuredProjects = projects.slice(0, 2);
@@ -37,7 +37,7 @@ const Home = () => {
       ...prev,
       [name]: value
     }));
-    
+
     if (errors[name as keyof FormErrors]) {
       setErrors(prev => ({
         ...prev,
@@ -48,50 +48,50 @@ const Home = () => {
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
-    
+
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
     }
-    
+
     // if (!formData.email.trim()) {
     //   newErrors.email = 'Email is required';
     // } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
     //   newErrors.email = 'Email is not valid';
     // }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
     } else if (formData.message.trim().length < 1) {
       newErrors.message = 'Message must be at least 1 characters';
     }
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm() || !form.current) {
       return;
     }
-    
+
     setIsSubmitting(true);
-    
+
     try {
       const result = await emailjs.sendForm(
-        'service_3mozd7k', 
+        'service_3mozd7k',
         'template_rcillnq',
         form.current,
         'dht3uhiaUkV4QQXl1'
       );
-      
+
       if (result.text === 'OK') {
         setSubmitStatus({
           success: true,
           message: 'Your message has been sent successfully! I will get back to you soon.',
         });
-        
+
         setFormData({
           name: '',
           email: '',
@@ -126,10 +126,40 @@ const Home = () => {
             <h1>Hi, I'm <span className="highlight">Nishchay Sharma</span></h1>
             <h2>Full Stack Developer</h2>
             <p>Who turns ideas into interactive digital experiences. From backend logic to frontend finesse, I build web solutions that are fast, reliable, and user-friendly.</p>
+            <div className="social-links-home">
+              <a href="https://github.com/nish340" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tooltip="Visit GitHub">
+                <i className="social-icon-home github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/nishchay-sharma-64b0661b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="Visit LinkedIn">
+                <i className="social-icon-home linkedin"></i>
+              </a>
+
+              <a href="https://www.npmjs.com/~nish34" target="_blank" rel="noopener noreferrer" aria-label="NPM Profile" data-tooltip="Visit NPM">
+                <i className="social-icon-home npm"></i>
+              </a>
+              <a href="https://medium.com/@nishchay340" target="_blank" rel="noopener noreferrer" aria-label="Medium" data-tooltip="Visit Medium">
+                <i className="social-icon-home medium"></i>
+              </a>
+            </div>
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">Hire Me</Link>
               <Link to="/projects" className="btn btn-outline">View Projects</Link>
             </div>
+            {/* <div className="social-links-home">
+              <a href="https://github.com/nish340" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tooltip="Visit GitHub">
+                <i className="social-icon-home github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/nishchay-sharma-64b0661b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="Visit LinkedIn">
+                <i className="social-icon-home linkedin"></i>
+              </a>
+             
+              <a href="https://www.npmjs.com/~nish34" target="_blank" rel="noopener noreferrer" aria-label="NPM Profile" data-tooltip="Visit NPM">
+                <i className="social-icon-home npm"></i>
+              </a>
+              <a href="https://medium.com/@nishchay340" target="_blank" rel="noopener noreferrer" aria-label="Medium" data-tooltip="Visit Medium">
+                <i className="social-icon-home medium"></i>
+              </a>
+            </div> */}
           </div>
           <div className="hero-image slide-up">
             <div className="image-container">
@@ -144,7 +174,7 @@ const Home = () => {
           <h2 className="section-title">Featured Projects</h2>
           <div className="featured-projects">
             {featuredProjects.map((project, index) => (
-              <div className="featured-project slide-up" style={{animationDelay: `${0.2 + index * 0.2}s`}} key={project.id}>
+              <div className="featured-project slide-up" style={{ animationDelay: `${0.2 + index * 0.2}s` }} key={project.id}>
                 <div className="project-image" style={{ backgroundImage: `url(${project.image})` }}></div>
                 <div className="project-content">
                   <h3>{project.title}</h3>
@@ -228,14 +258,14 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="contact-preview-form-container">
               {submitStatus && (
                 <div className={`form-status ${submitStatus.success ? 'success' : 'error'}`}>
                   {submitStatus.message}
                 </div>
               )}
-              
+
               <form ref={form} className="contact-preview-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="name">Name</label>
@@ -249,7 +279,7 @@ const Home = () => {
                   />
                   {errors.name && <span className="error-message">{errors.name}</span>}
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
                   <input
@@ -262,7 +292,7 @@ const Home = () => {
                   />
                   {errors.email && <span className="error-message">{errors.email}</span>}
                 </div>
-                
+
                 <div className="form-group">
                   <label htmlFor="message">Message</label>
                   <textarea
@@ -275,9 +305,9 @@ const Home = () => {
                   ></textarea>
                   {errors.message && <span className="error-message">{errors.message}</span>}
                 </div>
-                
-                <button 
-                  type="submit" 
+
+                <button
+                  type="submit"
                   className="btn btn-primary submit-btn"
                   disabled={isSubmitting}
                 >
