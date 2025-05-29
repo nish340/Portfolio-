@@ -90,6 +90,10 @@ import project6_5 from './images/gallaryImages/project6/Screenshot 2025-05-20 11
 import project6_6 from './images/gallaryImages/project6/Screenshot 2025-05-20 115616.png';
 import project6_7 from './images/gallaryImages/project6/Screenshot 2025-05-20 115639.png';
 
+// next images
+import fitnessOne from './images/one five.png';
+import financeOne from './images/one.png';
+
 // Export all images as a single object
 export const images = {
   project1,
@@ -167,7 +171,9 @@ export const images = {
   project6_4,
   project6_5,
   project6_6,
-  project6_7
+  project6_7,
+  fitnessOne,
+  financeOne
 };
 
 // Export individual images
@@ -247,5 +253,7 @@ export {
   project6_4,
   project6_5,
   project6_6,
-  project6_7
+  project6_7,
+  fitnessOne,
+  financeOne
 };
