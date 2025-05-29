@@ -46,6 +46,24 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    title: 'FitLife – Fitness Tracker',
+    description: 'FitLife is an all-in-one fitness companion app that helps users stay on top of their health goals. It combines a calorie tracker, diet planner, and workout logging system into one seamless experience',
+    image: images.fitnessOne,
+    category: 'Health & Fitness',
+    tech: ['React', 'vite', 'Tailwind', 'Auth0', 'Typescript'],
+    github:'https://github.com/nish340/fitlife'
+  },
+  {
+    id: 5,
+    title: "Finance Tracker - Personal Finance Management",
+    description: "Finance Tracker is a personal finance management app that helps users track their income, expenses, and savings goals. It provides insights into spending habits and financial health.",
+    image: images.financeOne,
+    category: 'Finance',
+    tech: ['React', 'express', 'typescript', 'MongoDb', 'Typescript'],
+    github:"https://github.com/nish340/financeTraker"
+  },
+  {
+    id: 6,
     title: 'LearnSphere – Online Learning Platform',
     description: 'An interactive e-learning platform with course creation tools, student progress tracking, and integrated video conferencing for live classes.',
     image: images.project6,
@@ -53,7 +71,7 @@ export const projects: Project[] = [
     tech: ['React', 'Material UI', 'Express', 'MongoDB', 'Auth0']
   },
   {
-    id: 5,
+    id: 7,
     title: 'BitNest Exchange – Crypto Trading Platform',
     description: 'A robust cryptocurrency trading platform with advanced security features, real-time market data, and automated trading options. Supports multi-currency wallets and instant deposits/withdrawals.',
     image: images.project4,
@@ -61,7 +79,7 @@ export const projects: Project[] = [
     tech: ['React', 'WebSockets', 'Node.js', 'PostgreSQL', 'JWT Auth'],
   },
   {
-    id: 6,
+    id: 8,
     title: 'EventNest – Event Booking Platform',
     description: 'A comprehensive event management and booking platform with ticketing, venue selection, and attendee management features.',
     image: images.project5,
@@ -69,12 +87,13 @@ export const projects: Project[] = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Payment Gateway'],
   },
   {
-    id: 7,
+    id: 9,
     title: 'Ecommerce – Admin Dashboard',
     description: 'An admin dashboard for managing e-commerce operations, including product management, order tracking, and customer insights.',
     image: images.project1,
     category: 'E-commerce',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Rozerpay'],
+    github:'https://github.com/nish340/React-Admin-Dashboard'
   },
 ];
 
