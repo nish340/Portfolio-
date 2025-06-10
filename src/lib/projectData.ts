@@ -43,6 +43,7 @@ export const projects: Project[] = [
     image: images.project3,
     category: 'E-commerce',
     tech: ['React', 'Redux', 'Stripe', 'Nest.js', 'MongoDB'],
+    github:'https://github.com/nish340/chocobliss-e-commerce'
   },
   {
     id: 4,
