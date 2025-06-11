@@ -43,7 +43,8 @@ export const projects: Project[] = [
     image: images.project3,
     category: 'E-commerce',
     tech: ['React', 'Redux', 'Stripe', 'Nest.js', 'MongoDB'],
-    github:'https://github.com/nish340/chocobliss-e-commerce'
+    github: 'https://github.com/nish340/chocobliss-e-commerce',
+    demo: 'https://chocobliss.nishchay.online/'
   },
   {
     id: 4,
@@ -52,7 +53,8 @@ export const projects: Project[] = [
     image: images.fitnessOne,
     category: 'Health & Fitness',
     tech: ['React', 'vite', 'Tailwind', 'Auth0', 'Typescript'],
-    github:'https://github.com/nish340/fitlife'
+    github: 'https://github.com/nish340/fitlife',
+    demo: 'https://fitlife.nishchay.online/'
   },
   {
     id: 5,
@@ -61,7 +63,8 @@ export const projects: Project[] = [
     image: images.financeOne,
     category: 'Finance',
     tech: ['React', 'express', 'typescript', 'MongoDb', 'Typescript'],
-    github:"https://github.com/nish340/financeTraker"
+    github: "https://github.com/nish340/financeTraker",
+    demo: 'https://financeTraker.nishchay.online/'
   },
   {
     id: 6,
@@ -94,7 +97,7 @@ export const projects: Project[] = [
     image: images.project1,
     category: 'E-commerce',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Rozerpay'],
-    github:'https://github.com/nish340/React-Admin-Dashboard'
+    github: 'https://github.com/nish340/React-Admin-Dashboard'
   },
 ];
 
