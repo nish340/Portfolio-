@@ -38,16 +38,6 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'ChocolateBliss – E-commerce Website',
-    description: 'A delightful e-commerce platform for artisanal chocolate products with subscription services, gift options, and personalized recommendations.',
-    image: images.project3,
-    category: 'E-commerce',
-    tech: ['React', 'Redux', 'Stripe', 'Nest.js', 'MongoDB'],
-    github: 'https://github.com/nish340/chocobliss-e-commerce',
-    demo: 'https://chocobliss.nishchay.online/'
-  },
-  {
-    id: 4,
     title: 'FitLife – Fitness Tracker',
     description: 'FitLife is an all-in-one fitness companion app that helps users stay on top of their health goals. It combines a calorie tracker, diet planner, and workout logging system into one seamless experience',
     image: images.fitnessOne,
@@ -57,7 +47,7 @@ export const projects: Project[] = [
     demo: 'https://fitlife.nishchay.online/'
   },
   {
-    id: 5,
+    id: 4,
     title: "Finance Tracker - Personal Finance Management",
     description: "Finance Tracker is a personal finance management app that helps users track their income, expenses, and savings goals. It provides insights into spending habits and financial health.",
     image: images.financeOne,
@@ -65,6 +55,16 @@ export const projects: Project[] = [
     tech: ['React', 'express', 'typescript', 'MongoDb', 'Typescript'],
     github: "https://github.com/nish340/financeTraker",
     demo: 'https://financeTraker.nishchay.online/'
+  },
+  {
+    id: 5,
+    title: 'ChocolateBliss – E-commerce Website',
+    description: 'A delightful e-commerce platform for artisanal chocolate products with subscription services, gift options, and personalized recommendations.',
+    image: images.project3,
+    category: 'E-commerce',
+    tech: ['React', 'Redux', 'Stripe', 'Nest.js', 'MongoDB'],
+    github: 'https://github.com/nish340/chocobliss-e-commerce',
+    demo: 'https://chocobliss.nishchay.online/'
   },
   {
     id: 6,
