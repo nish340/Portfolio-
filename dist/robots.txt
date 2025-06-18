@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas
+Disallow: /admin/
+Disallow: /private/
+
+# Allow access to all CSS, JS, and image files
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+
+# Sitemap location
+Sitemap: https://nishchay.online/sitemap.xml

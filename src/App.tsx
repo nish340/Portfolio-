@@ -9,6 +9,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
+import Services from "./pages/Services";
 import "./App.css";
 import Testimonials from "./pages/Testimonials";
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/services" element={<Services />} />
           <Route path="*" element={<NotFound />} />
           <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
