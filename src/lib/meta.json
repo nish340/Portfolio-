@@ -1,0 +1,51 @@
+{
+  "global": {
+    "siteName": "Nishchay Sharma - Full Stack Developer",
+    "siteUrl": "https://nishchay.online",
+    "twitterHandle": "@52Nishchay",
+    "defaultImage": "/assets/logo.png",
+    "defaultKeywords": "full stack developer, web developer, React developer, Node.js developer, JavaScript developer, TypeScript developer, MERN stack, MEAN stack, hire web developer, freelance developer, remote developer, JavaScript expert, TypeScript expert, React developer Chandigarh, Node.js developer India, full stack developer near me, web application development services, custom web development, responsive website development, progressive web app development, SaaS application development, API integration services, database design and development, UI/UX development, web performance optimization, SEO-friendly web development, secure web application development, scalable web architecture, cloud deployment services, DevOps automation, AI integration services, chatbot development, e-commerce development, payment gateway integration, authentication system development, real-time application development, web application maintenance, code refactoring services, legacy code modernization, technical consultation, web development project management, agile development methodology, web accessibility compliance, cross-browser compatibility, mobile-first development, serverless architecture, microservices development, full stack MVP development, startup technology partner, enterprise web solutions, business process automation, digital transformation services, web application testing, quality assurance services, continuous integration setup, continuous deployment pipeline, code review services, technical documentation, API documentation, web security audit, hire web developer, freelance developer, remote developer, JavaScript expert, TypeScript expert, React developer Chandigarh, Node.js developer India, full stack developer near me, web application development services, custom web development, responsive website development, progressive web app development, SaaS application development, API integration services, database design and development, UI/UX development, web performance optimization, SEO-friendly web development, secure web application development, scalable web architecture, cloud deployment services, DevOps automation, AI integration services, chatbot development, e-commerce development, payment gateway integration, authentication system development, real-time application development, web application maintenance, code refactoring services, legacy code modernization, technical consultation, web development project management, agile development methodology, web accessibility compliance, cross-browser compatibility, mobile-first development, serverless architecture, microservices development, full stack MVP development, startup technology partner, enterprise web solutions, business process automation, digital transformation services, web application testing, quality assurance services, continuous integration setup, continuous deployment pipeline, code review services, technical documentation, API documentation, web security audit"
+  },
+  "pages": {
+    "home": {
+      "title": "Nishchay Sharma | Full Stack Developer | React, Node.js, MERN Stack",
+      "description": "Nishchay Sharma is a Full Stack Developer specializing in React, Node.js, and modern JavaScript frameworks. Building fast, scalable web applications for businesses worldwide.",
+      "keywords": "full stack developer, React developer, Node.js developer, web developer Chandigarh, JavaScript expert, TypeScript developer, MERN stack developer"
+    },
+    "services": {
+      "title": "Expert Full Stack Developer Services | React, Node.js, MERN, MEAN Stack | Chandigarh, India",
+      "description": "Hire expert full stack developer in Chandigarh, India for React, Angular, Node.js, Express, MongoDB, NestJS development. Specialized in MERN & MEAN stack, SaaS, AI integration, and DevOps solutions for startups and businesses worldwide.",
+      "keywords": "full stack developer services, hire React developer, Node.js backend services, freelance SaaS developer, AI chatbot integration, DevOps for web apps, MERN stack developer, MEAN stack developer, Chandigarh developer, India developer, hire web developer, freelance developer, remote developer, JavaScript expert, TypeScript expert, React developer Chandigarh, Node.js developer India, full stack developer near me, web application development services, custom web development, responsive website development, progressive web app development, SaaS application development, API integration services, database design and development, UI/UX development, web performance optimization, SEO-friendly web development, secure web application development, scalable web architecture, cloud deployment services, DevOps automation, AI integration services, chatbot development, e-commerce development, payment gateway integration, authentication system development, real-time application development, web application maintenance, code refactoring services, legacy code modernization, technical consultation, web development project management, agile development methodology, web accessibility compliance, cross-browser compatibility, mobile-first development, serverless architecture, microservices development, full stack MVP development, startup technology partner, enterprise web solutions, business process automation, digital transformation services, web application testing, quality assurance services, continuous integration setup, continuous deployment pipeline, code review services, technical documentation, API documentation, web security audit, hire web developer, freelance developer, remote developer, JavaScript expert, TypeScript expert, React developer Chandigarh, Node.js developer India, full stack developer near me, web application development services, custom web development, responsive website development, progressive web app development, SaaS application development, API integration services, database design and development, UI/UX development, web performance optimization, SEO-friendly web development, secure web application development, scalable web architecture, cloud deployment services, DevOps automation, AI integration services, chatbot development, e-commerce development, payment gateway integration, authentication system development, real-time application development, web application maintenance, code refactoring services, legacy code modernization, technical consultation, web development project management, agile development methodology, web accessibility compliance, cross-browser compatibility, mobile-first development, serverless architecture, microservices development, full stack MVP development, startup technology partner, enterprise web solutions, business process automation, digital transformation services, web application testing, quality assurance services, continuous integration setup, continuous deployment pipeline, code review services, technical documentation, API documentation, web security audit"
+    },
+    "about": {
+      "title": "About Nishchay Sharma | Full Stack Developer with 2.5+ Years Experience",
+      "description": "Learn about Nishchay Sharma, a Full Stack Developer with 2.5+ years of experience in MERN and MEAN stack development. Based in Chandigarh, India, serving clients worldwide.",
+      "keywords": "about Nishchay Sharma, full stack developer experience, MERN stack developer background, web developer Chandigarh, JavaScript developer profile"
+    },
+    "projects": {
+      "title": "Web Development Projects | Full Stack Developer Portfolio | Nishchay Sharma",
+      "description": "Explore Nishchay Sharma's full stack development projects including web applications, SaaS platforms, e-commerce solutions, and more built with React, Node.js, and modern technologies.",
+      "keywords": "full stack projects, web development portfolio, React projects, Node.js applications, MERN stack examples, JavaScript portfolio, TypeScript projects"
+    },
+    "gallery": {
+      "title": "Project Gallery | UI/UX Designs & Web Application Screenshots | Nishchay Sharma",
+      "description": "Browse through screenshots and visual elements of web applications, dashboards, and interfaces designed and developed by Nishchay Sharma.",
+      "keywords": "web development gallery, UI screenshots, UX designs, web application interfaces, dashboard designs, React UI examples"
+    },
+    "contact": {
+      "title": "Contact Nishchay Sharma | Hire Full Stack Developer | Get a Quote",
+      "description": "Get in touch with Nishchay Sharma for your web development needs. Hire a skilled full stack developer for your next project or discuss collaboration opportunities.",
+      "keywords": "contact full stack developer, hire React developer, hire Node.js developer, web development services, get quote for web application, hire JavaScript developer"
+    },
+    "blog": {
+      "title": "Web Development Blog | Full Stack Tips & Insights | Nishchay Sharma",
+      "description": "Read articles, tutorials, and insights about full stack development, React, Node.js, and modern web technologies by Nishchay Sharma.",
+      "keywords": "web development blog, full stack tutorials, React tips, Node.js guides, JavaScript articles, TypeScript tutorials, web development insights"
+    },
+    "testimonials": {
+      "title": "Client Testimonials | Full Stack Developer Reviews | Nishchay Sharma",
+      "description": "Read what clients say about working with Nishchay Sharma. Reviews and testimonials from businesses and startups about full stack development services.",
+      "keywords": "full stack developer reviews, web developer testimonials, client feedback, React developer reviews, Node.js developer testimonials"
+    }
+  }
+}
