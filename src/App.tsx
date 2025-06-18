@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import SEOBoost from "./components/SEOBoost";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -15,24 +17,27 @@ import Testimonials from "./pages/Testimonials";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Navbar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-        </Routes>
-      </main>
-      <Footer />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <SEOBoost />
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+          </Routes>
+        </main>
+        <Footer />
+      </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

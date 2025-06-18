@@ -5,8 +5,8 @@
       "@type": "WebSite",
       "@id": "https://nishchay.online/#website",
       "url": "https://nishchay.online/",
-      "name": "Nishchay Sharma - Full Stack Developer",
-      "description": "Professional Full Stack Developer specializing in MERN and MEAN stack development",
+      "name": "Nishchay Sharma - Full Stack Developer | React, Node.js, MERN Stack",
+      "description": "Professional Full Stack Developer specializing in MERN and MEAN stack development, React, Node.js, and modern web technologies",
       "potentialAction": [
         {
           "@type": "SearchAction",
@@ -31,11 +31,13 @@
         "contentUrl": "https://nishchay.online/profile-image.jpg",
         "caption": "Nishchay Sharma"
       },
-      "description": "Full Stack Developer with 2.5+ years of experience in MERN and MEAN stack development",
+      "description": "Full Stack Developer with 2.5+ years of experience in MERN and MEAN stack development, specializing in React, Node.js, Express, MongoDB, and modern JavaScript frameworks",
       "sameAs": [
         "https://github.com/nish340",
         "https://www.linkedin.com/in/nishchay-sharma-64b0661b3/",
-        "https://x.com/52Nishchay"
+        "https://x.com/52Nishchay",
+        "https://www.npmjs.com/~nish34",
+        "https://medium.com/@nishchay340"
       ],
       "jobTitle": "Full Stack Developer",
       "worksFor": {
@@ -51,8 +53,27 @@
         "TypeScript",
         "JavaScript",
         "Full Stack Development",
-        "Web Development"
-      ]
+        "Web Development",
+        "MERN Stack",
+        "MEAN Stack",
+        "REST API",
+        "GraphQL",
+        "DevOps",
+        "AWS",
+        "Docker",
+        "CI/CD",
+        "AI Integration",
+        "OpenAI"
+      ],
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chandigarh",
+          "addressRegion": "Chandigarh",
+          "addressCountry": "India"
+        }
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -67,18 +88,24 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Services",
+          "item": "https://nishchay.online/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "About",
           "item": "https://nishchay.online/about"
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "name": "Projects",
           "item": "https://nishchay.online/projects"
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "name": "Contact",
           "item": "https://nishchay.online/contact"
         }
@@ -95,6 +122,7 @@
         "width": "180",
         "height": "180"
       },
+      "description": "Expert full stack development services including React frontend development, Node.js backend APIs, SaaS MVP development, DevOps solutions, and AI integration for businesses worldwide.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Chandigarh",
@@ -112,7 +140,107 @@
         "opens": "09:00",
         "closes": "18:00"
       },
-      "priceRange": "$$"
+      "priceRange": "$$",
+      "areaServed": [
+        {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "30.7333",
+            "longitude": "76.7794"
+          },
+          "geoRadius": "5000"
+        },
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "Country",
+          "name": "Canada"
+        },
+        {
+          "@type": "Country",
+          "name": "Australia"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Full Stack Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Frontend Development with React",
+              "description": "Creating responsive, interactive, and high-performance user interfaces using React and modern frontend technologies."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Backend API Development",
+              "description": "Building robust, secure, and scalable backend services using Node.js, Express, and NestJS to power your applications."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Full-Stack MVP Development",
+              "description": "Turning your startup idea into a working Minimum Viable Product with clean code and scalable architecture using MERN or MEAN stack."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "DevOps & Deployment",
+              "description": "Setting up efficient deployment pipelines and infrastructure to ensure your application runs smoothly in production."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Integration Services",
+              "description": "Enhancing your applications with artificial intelligence capabilities through OpenAI and other AI service integrations."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://nishchay.online/services/#webpage",
+      "url": "https://nishchay.online/services",
+      "name": "Expert Full Stack Developer Services | React, Node.js, MERN, MEAN Stack | Chandigarh, India",
+      "isPartOf": {
+        "@id": "https://nishchay.online/#website"
+      },
+      "about": {
+        "@id": "https://nishchay.online/#person"
+      },
+      "breadcrumb": {
+        "@id": "https://nishchay.online/#breadcrumb"
+      },
+      "description": "Hire expert full stack developer in Chandigarh, India for React, Angular, Node.js, Express, MongoDB, NestJS development. Specialized in MERN & MEAN stack, SaaS, AI integration, and DevOps solutions for startups and businesses worldwide.",
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": ["https://nishchay.online/services"]
+        }
+      ]
     }
   ]
 }

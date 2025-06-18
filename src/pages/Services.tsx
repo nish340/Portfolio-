@@ -5,13 +5,7 @@ import './Services.css';
 const Services = () => {
   return (
     <div className="services-page">
-      <SEOHelmet
-        title="Expert Full Stack Developer Services | React, Node.js, MERN, MEAN Stack | Chandigarh, India"
-        description="Hire expert full stack developer in Chandigarh, India for React, Angular, Node.js, Express, MongoDB, NestJS development. Specialized in MERN & MEAN stack, SaaS, AI integration, and DevOps solutions for startups and businesses worldwide."
-        keywords="full stack developer services, hire React developer, Node.js developer Chandigarh, MERN stack developer India, MEAN stack expert, JavaScript developer, TypeScript developer, frontend developer, backend developer, MongoDB developer, Express.js developer, Angular developer, NestJS developer, Next.js developer, React Native developer, web app developer, mobile app developer, SaaS developer, DevOps engineer, AWS developer, Docker expert, Kubernetes developer, CI/CD pipeline, API development, GraphQL developer, REST API, database design, UI/UX development, responsive web design, performance optimization, Tailwind CSS, Material UI, Bootstrap developer, Redux expert, Context API, Zustand, React Query, authentication systems, payment integration, AI integration, ChatGPT integration, OpenAI API, remote developer India, freelance developer, Chandigarh developer, Punjab developer, Indian developer, USA clients, UK projects, Canada remote work, Australia outsourcing"
-        canonicalUrl="https://nishchay.online/services"
-        ogType="website"
-      />
+      <SEOHelmet pageName="services" />
 
       <section className="services-hero">
         <div className="container">
