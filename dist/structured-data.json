@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://nishchay.online/#website",
+      "url": "https://nishchay.online/",
+      "name": "Nishchay Sharma - Full Stack Developer",
+      "description": "Professional Full Stack Developer specializing in MERN and MEAN stack development",
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://nishchay.online/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nishchay.online/#person",
+      "name": "Nishchay Sharma",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://nishchay.online/#personImage",
+        "inLanguage": "en-US",
+        "url": "https://nishchay.online/profile-image.jpg",
+        "contentUrl": "https://nishchay.online/profile-image.jpg",
+        "caption": "Nishchay Sharma"
+      },
+      "description": "Full Stack Developer with 2.5+ years of experience in MERN and MEAN stack development",
+      "sameAs": [
+        "https://github.com/nish340",
+        "https://www.linkedin.com/in/nishchay-sharma-64b0661b3/",
+        "https://x.com/52Nishchay"
+      ],
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "knowsAbout": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "Full Stack Development",
+        "Web Development"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://nishchay.online/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nishchay.online/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://nishchay.online/about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Projects",
+          "item": "https://nishchay.online/projects"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://nishchay.online/contact"
+        }
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://nishchay.online/#organization",
+      "name": "Nishchay Sharma - Full Stack Development Services",
+      "url": "https://nishchay.online/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nishchay.online/logo.png",
+        "width": "180",
+        "height": "180"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chandigarh",
+        "addressRegion": "Chandigarh",
+        "addressCountry": "India"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.7333",
+        "longitude": "76.7794"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$"
+    }
+  ]
+}
