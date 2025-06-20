@@ -2,6 +2,7 @@ import { useState, FormEvent, ChangeEvent, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { projects, galleryImages } from '../lib/projectData';
+import AdSense from '../components/AdSense';
 import './Home.css';
 
 interface FormData {
@@ -190,6 +191,8 @@ const Home = () => {
         </div>
       </section>
 
+      <AdSense adSlot="4567890123" className="my-1" />
+      
       <section className="about-preview section">
         <div className="container">
           <h2 className="section-title">About Me</h2>

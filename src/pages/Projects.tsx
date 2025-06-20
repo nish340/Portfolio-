@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { projects } from '../lib/projectData';
+import AdSense from '../components/AdSense';
 import './Projects.css';
 
 const Projects = () => {
@@ -19,6 +20,8 @@ const Projects = () => {
         </div>
       </header>
 
+      <AdSense adSlot="6789012345" className="my-1" />
+      
       <section className="projects-section section">
         <div className="container">
           <div className="filter-container">

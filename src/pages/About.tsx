@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { resume } from '../assets/image';
+import AdSense from '../components/AdSense';
 import './About.css';
 
 const About = () => {
@@ -88,6 +89,8 @@ const About = () => {
             </section>
 
 
+            <AdSense adSlot="5678901234" className="my-1" />
+            
             <section className="skills-section section">
                 <div className="container">
                     <h2 className="section-title">Skills & Expertise</h2>

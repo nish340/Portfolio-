@@ -1,0 +1,40 @@
+.adsense-container {
+  width: 100%;
+  max-width: 100%;
+  margin: .2rem 0;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.adsense-container.my-4 {
+  margin: 2rem 0;
+}
+
+.adsbygoogle {
+  display: block !important;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .adsense-container {
+    margin: 1rem 0;
+    padding: 0.25rem;
+  }
+  
+  .adsense-container.my-4 {
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .adsense-container {
+    margin: 0.75rem 0;
+  }
+  
+  .adsense-container.my-4 {
+    margin: 1rem 0;
+  }
+}

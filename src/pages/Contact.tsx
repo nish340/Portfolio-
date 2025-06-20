@@ -1,5 +1,6 @@
 import { useState, FormEvent, ChangeEvent, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import AdSense from '../components/AdSense';
 import './Contact.css';
 
 interface FormData {
@@ -125,6 +126,8 @@ const Contact = () => {
         </div>
       </header>
 
+      <AdSense adSlot="7890123456" className="my-1" />
+      
       <section className="contact-section section">
         <div className="container">
           <div className="contact-grid">
