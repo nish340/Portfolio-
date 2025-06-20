@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import SEOHelmet from '../components/SEOHelmet';
+import AdSense from '../components/AdSense';
 import './Services.css';
 
 const Services = () => {
@@ -35,6 +36,7 @@ const Services = () => {
             With expertise in modern JavaScript/TypeScript frameworks and a focus on performance, I create solutions that are both
             technically excellent and user-friendly.
           </p>
+          <AdSense adSlot="1234567890" className="my-1" />
         </div>
       </section>
 
@@ -160,6 +162,8 @@ const Services = () => {
         </div>
       </section>
 
+      <AdSense adSlot="2345678901" className="my-1" />
+      
       <section className="services-process section">
         <div className="container">
           <h2 className="section-title">My Development Process</h2>
@@ -230,6 +234,8 @@ const Services = () => {
         </div>
       </section>
 
+      <AdSense adSlot="3456789012" className="my-1" />
+      
       <section className="services-faq section">
         <div className="container">
           <h2 className="section-title">Frequently Asked Questions</h2>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://nishchay.online/projects</loc>
+    <image:image>
+      <image:loc>https://nishchay.online/assets/Screenshot%202025-05-20%20204827-Pmg4tXtL.png</image:loc>
+      <image:title>Project 1 Screenshot</image:title>
+      <image:caption>Project 1 - Web Application</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://nishchay.online/assets/project3-BHvftgxR.png</image:loc>
+      <image:title>Project 2 Screenshot</image:title>
+      <image:caption>Project 2 - E-commerce Platform</image:caption>
+    </image:image>
+    <!-- <image:image>
+      <image:loc>https://nishchay.online/src/assets/images/project3.png</image:loc>
+      <image:title>Project 3 Screenshot</image:title>
+      <image:caption>Project 3 - E-commerce Platform</image:caption>
+    </image:image> -->
+    <image:image>
+      <image:loc>https://nishchay.online/assets/Screenshot%202025-05-20%20115355-TXwjOY0V.png</image:loc>
+      <image:title>Project 4 Screenshot</image:title>
+      <image:caption>Project 4 - Dashboard Application</image:caption>
+    </image:image>
+    <!-- <image:image>
+      <image:loc>https://nishchay.online/src/assets/images/project5.png</image:loc>
+      <image:title>Project 5 Screenshot</image:title>
+      <image:caption>Project 5 - API Integration</image:caption>
+    </image:image> -->
+    <image:image>
+      <image:loc>https://nishchay.online/assets/Screenshot%202025-05-21%20160918-CWZGC4bS.png</image:loc>
+      <image:title>Project 6 Screenshot</image:title>
+      <image:caption>Project 6 - Progressive Web App</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://nishchay.online/gallery</loc>
+    <image:image>
+      <image:loc>	https://nishchay.online/assets/project2-Dj-YpB9s.png</image:loc>
+      <image:title>Project 1 Gallery Image</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>hthttps://nishchay.online/assets/Screenshot%202025-05-20%20205104-BVDZdhct.png</image:loc>
+      <image:title>Project 1 Gallery Image</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://nishchay.online/assets/Screenshot%202025-05-21%20151454-Cd4XvPw1.png</image:loc>
+      <image:title>Project 2 Gallery Image</image:title>
+    </image:image>
+  </url>
+</urlset>
