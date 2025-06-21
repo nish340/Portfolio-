@@ -1,97 +1,76 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { blogApi, Blog, BlogResponse } from '../services/blogApi';
 import './Blog.css';
 
-interface BlogPost {
-  id: number;
-  title: string;
-  excerpt: string;
-  content: string;
-  image: string;
-  category: string;
-  author: string;
-  date: string;
-  readTime: string;
-}
-
-const Blog = () => {
-  const blogPosts: BlogPost[] = [
-    {
-      id: 1,
-      title: 'Getting Started with React Development',
-      excerpt: 'Learn the fundamentals of React and how to build your first application with this powerful JavaScript library.',
-      content: 'Full article content here...',
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'Development',
-      author: 'Nishchay Sharma',
-      date: 'June 15, 2023',
-      readTime: '5 min read',
-    },
-    {
-      id: 2,
-      title: 'Responsive Design Best Practices',
-      excerpt: 'Discover the essential techniques for creating websites that look great on any device.',
-      content: 'Full article content here...',
-      image: 'https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'Design',
-      author: 'Nishchay Sharma',
-      date: 'July 22, 2023',
-      readTime: '4 min read',
-    },
-    {
-      id: 3,
-      title: 'Optimizing Website Performance',
-      excerpt: 'Learn how to improve your website speed and performance for better user experience and SEO rankings.',
-      content: 'Full article content here...',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'Performance',
-      author: 'Nishchay Sharma',
-      date: 'August 10, 2023',
-      readTime: '6 min read',
-    },
-    {
-      id: 4,
-      title: 'Introduction to TypeScript',
-      excerpt: 'Discover how TypeScript can improve your JavaScript development with static typing and advanced features.',
-      content: 'Full article content here...',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'Development',
-      author: 'Nishchay Sharma',
-      date: 'September 5, 2023',
-      readTime: '7 min read',
-    },
-    {
-      id: 5,
-      title: 'Modern CSS Techniques',
-      excerpt: 'Explore the latest CSS features and techniques that can transform your web design approach.',
-      content: 'Full article content here...',
-      image: 'https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'Design',
-      author: 'Nishchay Sharma',
-      date: 'October 18, 2023',
-      readTime: '5 min read',
-    },
-    {
-      id: 6,
-      title: 'Building Accessible Web Applications',
-      excerpt: 'Learn how to make your web applications accessible to all users, including those with disabilities.',
-      content: 'Full article content here...',
-      image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-      category: 'Accessibility',
-      author: 'Nishchay Sharma',
-      date: 'November 30, 2023',
-      readTime: '8 min read',
-    },
-  ];
-
+const BlogPage = () => {
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<string>('All');
-  const categories = ['All', ...Array.from(new Set(blogPosts.map(post => post.category)))];
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pagination, setPagination] = useState({ page: 1, limit: 6, total: 0, pages: 1 });
 
-  const filteredPosts = filter === 'All' 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === filter);
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      setLoading(true);
+      try {
+        const response: BlogResponse = await blogApi.getAllBlogs(currentPage, 6);
+        // Only show published and non-hidden blogs
+        const publishedBlogs = response.data.filter(blog => blog.status === 'published' && !blog.hidden);
+        setBlogs(publishedBlogs);
+        setPagination(response.pagination);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, [currentPage]);
+
+  const categories = ['All', ...Array.from(new Set(blogs.map(blog => blog.category)))];
+  const filteredBlogs = filter === 'All' ? blogs : blogs.filter(blog => blog.category === filter);
+  const showCategories = blogs.length > 0;
+
+  if (loading) {
+    return (
+      <div className="blog-page">
+        <header className="page-header">
+          <div className="container">
+            <h1>My Blog</h1>
+            <p>Thoughts, ideas, and resources</p>
+          </div>
+        </header>
+        <section className="blog-section section">
+          <div className="container">
+            <div className="blog-loading">
+              <div className="loading-dots">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <p>Loading amazing content...</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div className="blog-page">
+      <Helmet>
+        <title>Blog - Nishchay Sharma | Web Development Insights & Tutorials</title>
+        <meta name="description" content="Explore web development tutorials, JavaScript tips, React guides, and programming insights by Nishchay Sharma. Stay updated with the latest in tech." />
+        <meta name="keywords" content="web development, JavaScript, React, programming, tutorials, Nishchay Sharma, blog, tech insights" />
+        <meta property="og:title" content="Blog - Nishchay Sharma" />
+        <meta property="og:description" content="Web development tutorials and programming insights" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href={window.location.href} />
+      </Helmet>
+      
       <header className="page-header">
         <div className="container">
           <h1>My Blog</h1>
@@ -101,43 +80,121 @@ const Blog = () => {
 
       <section className="blog-section section">
         <div className="container">
-          <div className="filter-container">
-            {categories.map((category, index) => (
-              <button 
-                key={index} 
-                className={`filter-button ${filter === category ? 'active' : ''}`}
-                onClick={() => setFilter(category)}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+          {showCategories && (
+            <div className="filter-container">
+              {categories.map((category, index) => (
+                <button 
+                  key={index} 
+                  className={`filter-button ${filter === category ? 'active' : ''}`}
+                  onClick={() => setFilter(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          )}
 
-          <div className="blog-grid">
-            {filteredPosts.map((post) => (
-              <div className="blog-card" key={post.id}>
-                <div className="blog-image" style={{ backgroundImage: `url(${post.image})` }}>
-                  <div className="blog-category">{post.category}</div>
+          {filteredBlogs.length === 0 ? (
+            <div className="no-blogs">
+              <div className="no-blogs-content">
+                <h3>Coming Soon! 🚀</h3>
+                <p>Stay tuned for amazing content</p>
+                <div className="coming-soon-animation">
+                  <div className="dot"></div>
+                  <div className="dot"></div>
+                  <div className="dot"></div>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="blog-grid">
+              {filteredBlogs.map((blog) => (
+                <Link 
+                  to={`/blog/${blog.slug}?id=${blog._id || blog.id}`} 
+                  className="blog-card-link" 
+                  key={blog._id || blog.id}
+                >
+                  <div className="blog-card">
+                <div 
+                  className="blog-image" 
+                  style={{ 
+                    backgroundImage: `url(${blog.coverImage?.url || 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'})` 
+                  }}
+                >
+                  <div className="blog-category">{blog.category}</div>
                 </div>
                 <div className="blog-info">
                   <div className="blog-meta">
-                    <span className="blog-date">{post.date}</span>
-                    <span className="blog-read-time">{post.readTime}</span>
+                    <span className="blog-date">
+                      {new Date(blog.createdAt || '').toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </span>
+                    <span className="blog-read-time">{blog.meta.readTime} min read</span>
                   </div>
-                  <h3>{post.title}</h3>
-                  <p>{post.excerpt}</p>
-                  <div className="blog-footer">
-                    <span className="blog-author">By {post.author}</span>
-                    <a href={`/blog/${post.id}`} className="read-more">Read More</a>
+                  <h3>{blog.title}</h3>
+                  <p>{blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0, 150) + '...'}</p>
+                  {/* Tags */}
+                  {blog.tags && blog.tags.length > 0 && (
+                    <div className="blog-tags-preview">
+                      {blog.tags.slice(0, 3).map((tag, index) => (
+                        <span key={index} className="blog-tag-small">{tag}</span>
+                      ))}
+                      {blog.tags.length > 3 && <span className="blog-tag-more">+{blog.tags.length - 3}</span>}
+                    </div>
+                  )}
+                  
+                    <div className="blog-footer">
+                      <span className="blog-author">By {blog.author}</span>
+                      <span className="read-more">
+                        Read More →
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
-          </div>
+            </div>
+          )}
+
+          {/* Pagination */}
+          {pagination.pages > 1 && (
+            <div className="pagination">
+              <button 
+                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                disabled={currentPage === 1}
+                className="pagination-btn"
+              >
+                Previous
+              </button>
+              
+              <div className="pagination-numbers">
+                {Array.from({ length: pagination.pages }, (_, i) => i + 1).map(page => (
+                  <button
+                    key={page}
+                    onClick={() => setCurrentPage(page)}
+                    className={`pagination-number ${currentPage === page ? 'active' : ''}`}
+                  >
+                    {page}
+                  </button>
+                ))}
+              </div>
+              
+              <button 
+                onClick={() => setCurrentPage(prev => Math.min(prev + 1, pagination.pages))}
+                disabled={currentPage === pagination.pages}
+                className="pagination-btn"
+              >
+                Next
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </div>
   );
 };
 
-export default Blog;
+export default BlogPage;
