@@ -69,10 +69,21 @@ const BlogPost = () => {
         <meta property="og:title" content={blog.title} />
         <meta property="og:description" content={blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0, 160)} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content={blog.coverImage?.url} />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:site_name" content="Nishchay Sharma - Full Stack Developer" />
+        {blog.coverImage?.url && <meta property="og:image" content={blog.coverImage.url} />}
+        {blog.coverImage?.url && <meta property="og:image:width" content="1200" />}
+        {blog.coverImage?.url && <meta property="og:image:height" content="630" />}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={blog.title} />
+        <meta name="twitter:description" content={blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0, 160)} />
+        {blog.coverImage?.url && <meta name="twitter:image" content={blog.coverImage.url} />}
         <meta property="article:author" content={blog.author} />
         <meta property="article:published_time" content={blog.createdAt} />
-        <meta property="article:tag" content={blog.tags.join(', ')} />
+        <meta property="article:section" content="Technology" />
+        {blog.tags.map((tag, index) => (
+          <meta key={index} property="article:tag" content={tag} />
+        ))}
         <link rel="canonical" href={window.location.href.split('?')[0]} />
       </Helmet>
       
