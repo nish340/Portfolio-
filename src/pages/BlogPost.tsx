@@ -10,6 +10,7 @@ const BlogPost = () => {
   const [blog, setBlog] = useState<Blog | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [showCopySuccess, setShowCopySuccess] = useState(false);
 
   useEffect(() => {
     const fetchBlog = async () => {
@@ -131,8 +132,26 @@ const BlogPost = () => {
 
           {/* Blog Footer */}
           <footer className="blog-post-footer">
+            {showCopySuccess && (
+              <div className={`copy-success ${showCopySuccess ? 'show' : ''}`}>
+                ✓ URL copied!
+              </div>
+            )}
             <div className="blog-post-share">
-              <h4>Share this post</h4>
+              <div className="share-header">
+                <h4>Share this post</h4>
+                <button 
+                  className="copy-url-btn"
+                  onClick={() => {
+                    navigator.clipboard.writeText(window.location.href);
+                    setShowCopySuccess(true);
+                    setTimeout(() => setShowCopySuccess(false), 2000);
+                  }}
+                  title="Copy URL"
+                >
+                  📋
+                </button>
+              </div>
               <div className="share-buttons">
                 <a 
                   href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(blog.title)}&url=${encodeURIComponent(window.location.href)}`}
