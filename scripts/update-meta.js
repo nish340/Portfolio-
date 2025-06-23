@@ -79,16 +79,28 @@ metaData.pages.services.keywords = `${metaData.pages.services.keywords}, ${addit
 fs.writeFileSync(META_FILE_PATH, JSON.stringify(metaData, null, 2));
 console.log(`Meta data updated at ${META_FILE_PATH}`);
 
-// Also update the sitemap dates
-const sitemapPath = path.resolve(__dirname, '../public/sitemap.xml');
-let sitemap = fs.readFileSync(sitemapPath, 'utf8');
-sitemap = sitemap.replace(/<lastmod>.*?<\/lastmod>/g, `<lastmod>${CURRENT_DATE}</lastmod>`);
-fs.writeFileSync(sitemapPath, sitemap);
-console.log(`Sitemap updated at ${sitemapPath}`);
+// Update sitemap dates for all sitemap files
+const sitemapFiles = [
+  '../public/sitemap.main.xml',
+  '../public/sitemap.blog.xml',
+  '../public/sitemap.images.xml'
+];
 
-// Update sitemap-index.xml with current date
-const sitemapIndexPath = path.resolve(__dirname, '../public/sitemap-index.xml');
-let sitemapIndex = fs.readFileSync(sitemapIndexPath, 'utf8');
-sitemapIndex = sitemapIndex.replace(/<lastmod>.*?<\/lastmod>/g, `<lastmod>${CURRENT_DATE}</lastmod>`);
-fs.writeFileSync(sitemapIndexPath, sitemapIndex);
-console.log(`Sitemap index updated at ${sitemapIndexPath}`);
+sitemapFiles.forEach(sitemapFile => {
+  const sitemapPath = path.resolve(__dirname, sitemapFile);
+  if (fs.existsSync(sitemapPath)) {
+    let sitemap = fs.readFileSync(sitemapPath, 'utf8');
+    sitemap = sitemap.replace(/<lastmod>.*?<\/lastmod>/g, `<lastmod>${CURRENT_DATE}</lastmod>`);
+    fs.writeFileSync(sitemapPath, sitemap);
+    console.log(`Sitemap updated at ${sitemapPath}`);
+  }
+});
+
+// Update sitemap.index.xml with current date
+const sitemapIndexPath = path.resolve(__dirname, '../public/sitemap.index.xml');
+if (fs.existsSync(sitemapIndexPath)) {
+  let sitemapIndex = fs.readFileSync(sitemapIndexPath, 'utf8');
+  sitemapIndex = sitemapIndex.replace(/<lastmod>.*?<\/lastmod>/g, `<lastmod>${CURRENT_DATE}</lastmod>`);
+  fs.writeFileSync(sitemapIndexPath, sitemapIndex);
+  console.log(`Sitemap index updated at ${sitemapIndexPath}`);
+}
