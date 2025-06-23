@@ -90,15 +90,15 @@ const Navbar = () => {
               Gallery
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link 
               to="/blog" 
-              className={location.pathname === '/blog' ? 'active' : ''} 
+              className={location.pathname.startsWith('/blog') ? 'active' : ''} 
               onClick={closeMenu}
             >
               Blog
             </Link>
-          </li> */}
+          </li>
           {/* <li>
             <Link 
               to="/testimonials" 
