@@ -55,7 +55,7 @@ function generateBlogRoutes(blogPosts) {
 // Generate sitemap XML content
 function generateSitemap(allRoutes) {
   let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  sitemap += '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">\n';
+  sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   
   allRoutes.forEach(route => {
     sitemap += '  <url>\n';
@@ -73,7 +73,7 @@ function generateSitemap(allRoutes) {
 // Generate blog sitemap XML content
 function generateBlogSitemap(blogPosts) {
   let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  sitemap += '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">\n';
+  sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
   
   blogPosts.forEach(blog => {
     const lastmod = blog.updatedAt ? new Date(blog.updatedAt).toISOString().split('T')[0] : CURRENT_DATE;
