@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { blogApi, Blog } from '../services/blogApi';
+import { generateBlogSEO } from '../lib/blogSeo';
 import './Blog.css';
 
 const BlogPost = () => {
@@ -59,32 +60,47 @@ const BlogPost = () => {
     );
   }
 
+  const seoData = generateBlogSEO(blog);
+
   return (
     <div className="blog-page">
       <Helmet>
-        <title>{blog.seo.metaTitle || blog.title} - Nishchay Sharma</title>
-        <meta name="description" content={blog.seo.metaDescription || blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0, 160)} />
-        <meta name="keywords" content={blog.seo.keywords.join(', ') || blog.tags.join(', ')} />
+        <title>{seoData.title}</title>
+        <meta name="description" content={seoData.description} />
+        <meta name="keywords" content={seoData.keywords} />
         <meta name="author" content={blog.author} />
-        <meta property="og:title" content={blog.title} />
-        <meta property="og:description" content={blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0, 160)} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={blog.seo?.metaTitle || blog.title} />
+        <meta property="og:description" content={seoData.description} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={window.location.href} />
+        <meta property="og:url" content={seoData.canonicalUrl} />
         <meta property="og:site_name" content="Nishchay Sharma - Full Stack Developer" />
-        {blog.coverImage?.url && <meta property="og:image" content={blog.coverImage.url} />}
-        {blog.coverImage?.url && <meta property="og:image:width" content="1200" />}
-        {blog.coverImage?.url && <meta property="og:image:height" content="630" />}
+        <meta property="og:image" content={seoData.imageUrl} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={blog.title} />
-        <meta name="twitter:description" content={blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0, 160)} />
-        {blog.coverImage?.url && <meta name="twitter:image" content={blog.coverImage.url} />}
+        <meta name="twitter:title" content={blog.seo?.metaTitle || blog.title} />
+        <meta name="twitter:description" content={seoData.description} />
+        <meta name="twitter:image" content={seoData.imageUrl} />
+        
+        {/* Article specific */}
         <meta property="article:author" content={blog.author} />
         <meta property="article:published_time" content={blog.createdAt} />
-        <meta property="article:section" content="Technology" />
+        <meta property="article:modified_time" content={blog.updatedAt || blog.createdAt} />
+        <meta property="article:section" content={blog.category} />
         {blog.tags.map((tag, index) => (
           <meta key={index} property="article:tag" content={tag} />
         ))}
-        <link rel="canonical" href={window.location.href.split('?')[0]} />
+        
+        <link rel="canonical" href={seoData.canonicalUrl} />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(seoData.structuredData)}
+        </script>
       </Helmet>
       
       <div className="container">

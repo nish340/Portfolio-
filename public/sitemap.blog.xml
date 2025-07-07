@@ -1,8 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://nishchay.online/blog/dynamic-routing-in-react-making-your-app-truly-interactive</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/understanding-reacts-virtual-dom-how-it-works-why-it-matters-what-you-must-know-for-interviews</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/react-hooks-explained-a-beginner-friendly-guide</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/mastering-react-routing-a-complete-guide-to-client-side-navigation</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/understanding-the-folder-structure-in-react-a-beginners-guide-to-the-react-ecosystem</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/getting-started-with-react-the-complete-beginners-guide-to-modern-frontend-development</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/bootstrap-guide-how-to-use-it-in-any-web-application-what-to-learn</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/css-scss-styling-the-web-like-a-pro</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nishchay.online/blog/getting-started-with-html-the-essentials-every-developer-should-know</loc>
+    <lastmod>2025-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://nishchay.online/blog/mern-stack-developer-roadmap-ai-integration-2025-full-stack-blog-course-daily</loc>
-    <lastmod>2025-06-23</lastmod>
+    <lastmod>2025-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

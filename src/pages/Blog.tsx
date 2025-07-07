@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { blogApi, Blog, BlogResponse } from '../services/blogApi';
+import { generateBlogListSEO } from '../lib/blogSeo';
 import './Blog.css';
 
 const BlogPage = () => {
@@ -59,6 +60,8 @@ const BlogPage = () => {
     );
   }
 
+  const blogListSEO = generateBlogListSEO();
+
   return (
     <div className="blog-page">
       <Helmet>
@@ -68,7 +71,17 @@ const BlogPage = () => {
         <meta property="og:title" content="Blog - Nishchay Sharma" />
         <meta property="og:description" content="Web development tutorials and programming insights" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href={window.location.href} />
+        <meta property="og:url" content="https://nishchaysharma.in/blog" />
+        <meta property="og:image" content="https://nishchaysharma.in/placeholder.svg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Blog - Nishchay Sharma" />
+        <meta name="twitter:description" content="Web development tutorials and programming insights" />
+        <link rel="canonical" href="https://nishchaysharma.in/blog" />
+        
+        {/* Structured Data for Blog */}
+        <script type="application/ld+json">
+          {JSON.stringify(blogListSEO.structuredData)}
+        </script>
       </Helmet>
       
       <header className="page-header">
