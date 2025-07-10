@@ -191,8 +191,6 @@ const Home = () => {
         </div>
       </section>
 
-      <AdSense adSlot="4567890123" className="my-1" />
-      
       <section className="about-preview section">
         <div className="container">
           <h2 className="section-title">About Me</h2>

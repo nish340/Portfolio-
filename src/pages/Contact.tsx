@@ -125,8 +125,6 @@ const Contact = () => {
           <p>Let's work together on your next project</p>
         </div>
       </header>
-
-      <AdSense adSlot="7890123456" className="my-1" />
       
       <section className="contact-section section">
         <div className="container">

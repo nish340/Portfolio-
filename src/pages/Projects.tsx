@@ -20,8 +20,6 @@ const Projects = () => {
         </div>
       </header>
 
-      <AdSense adSlot="6789012345" className="my-1" />
-      
       <section className="projects-section section">
         <div className="container">
           <div className="filter-container">

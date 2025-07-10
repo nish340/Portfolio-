@@ -88,9 +88,6 @@ const About = () => {
                 </div>
             </section>
 
-
-            <AdSense adSlot="5678901234" className="my-1" />
-            
             <section className="skills-section section">
                 <div className="container">
                     <h2 className="section-title">Skills & Expertise</h2>
