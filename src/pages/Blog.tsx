@@ -38,12 +38,12 @@ const BlogPage = () => {
   if (loading) {
     return (
       <div className="blog-page">
-        <header className="page-header">
+        {/* <header className="page-header">
           <div className="container">
             <h1>My Blog</h1>
             <p>Thoughts, ideas, and resources</p>
           </div>
-        </header>
+        </header> */}
         <section className="blog-section section">
           <div className="container">
             <div className="blog-loading">
@@ -52,7 +52,7 @@ const BlogPage = () => {
                 <div></div>
                 <div></div>
               </div>
-              <p>Loading amazing content...</p>
+              <p>Loading content...</p>
             </div>
           </div>
         </section>
@@ -77,27 +77,27 @@ const BlogPage = () => {
         <meta name="twitter:title" content="Blog - Nishchay Sharma" />
         <meta name="twitter:description" content="Web development tutorials and programming insights" />
         <link rel="canonical" href="https://nishchaysharma.in/blog" />
-        
+
         {/* Structured Data for Blog */}
         <script type="application/ld+json">
           {JSON.stringify(blogListSEO.structuredData)}
         </script>
       </Helmet>
-      
-      <header className="page-header">
+
+      {/* <header className="page-header">
         <div className="container">
           <h1>My Blog</h1>
           <p>Thoughts, ideas, and resources</p>
         </div>
-      </header>
+      </header> */}
 
-      <section className="blog-section section">
+      <section className="blog-section section" style={{ paddingTop: '80px' }}>
         <div className="container">
           {showCategories && (
             <div className="filter-container">
               {categories.map((category, index) => (
-                <button 
-                  key={index} 
+                <button
+                  key={index}
                   className={`filter-button ${filter === category ? 'active' : ''}`}
                   onClick={() => setFilter(category)}
                 >
@@ -122,67 +122,67 @@ const BlogPage = () => {
           ) : (
             <div className="blog-grid">
               {filteredBlogs.map((blog) => (
-                <Link 
-                  to={`/blog/${blog.slug}?id=${blog._id || blog.id}`} 
-                  className="blog-card-link" 
+                <Link
+                  to={`/blog/${blog.slug}?id=${blog._id || blog.id}`}
+                  className="blog-card-link"
                   key={blog._id || blog.id}
                 >
                   <div className="blog-card">
-                <div 
-                  className="blog-image" 
-                  style={{ 
-                    backgroundImage: `url(${blog.coverImage?.url || 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'})` 
-                  }}
-                >
-                  <div className="blog-category">{blog.category}</div>
-                </div>
-                <div className="blog-info">
-                  <div className="blog-meta">
-                    <span className="blog-date">
-                      {new Date(blog.createdAt || '').toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
-                      })}
-                    </span>
-                    <span className="blog-read-time">{blog.meta.readTime} min read</span>
-                  </div>
-                  <h3>{blog.title}</h3>
-                  <p>{blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0, 150) + '...'}</p>
-                  {/* Tags */}
-                  {blog.tags && blog.tags.length > 0 && (
+                    <div
+                      className="blog-image"
+                      style={{
+                        backgroundImage: `url(${blog.coverImage?.url || 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'})`
+                      }}
+                    >
+                      <div className="blog-category">{blog.category}</div>
+                    </div>
+                    <div className="blog-info">
+                      <div className="blog-meta">
+                        <span className="blog-date">
+                          {new Date(blog.createdAt || '').toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                          })}
+                        </span>
+                        <span className="blog-read-time">{blog.meta.readTime} min read</span>
+                      </div>
+                      <h3>{blog.title}</h3>
+                      <p>{blog.excerpt || blog.body.replace(/<[^>]*>/g, '').substring(0,115) + '...'}</p>
+                      {/* Tags */}
+                      {/* {blog.tags && blog.tags.length > 0 && (
                     <div className="blog-tags-preview">
                       {blog.tags.slice(0, 3).map((tag, index) => (
                         <span key={index} className="blog-tag-small">{tag}</span>
                       ))}
                       {blog.tags.length > 3 && <span className="blog-tag-more">+{blog.tags.length - 3}</span>}
                     </div>
-                  )}
-                  
-                    <div className="blog-footer">
-                      <span className="blog-author">By {blog.author}</span>
-                      <span className="read-more">
-                        Read More →
-                      </span>
+                  )} */}
+
+                      <div className="blog-footer">
+                        {/* <span className="blog-author">By {blog.author}</span> */}
+                        <span className="read-more">
+                          Read More →
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
             </div>
           )}
 
           {/* Pagination */}
           {pagination.pages > 1 && (
             <div className="pagination">
-              <button 
+              <button
                 onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
                 disabled={currentPage === 1}
                 className="pagination-btn"
               >
                 Previous
               </button>
-              
+
               <div className="pagination-numbers">
                 {Array.from({ length: pagination.pages }, (_, i) => i + 1).map(page => (
                   <button
@@ -194,8 +194,8 @@ const BlogPage = () => {
                   </button>
                 ))}
               </div>
-              
-              <button 
+
+              <button
                 onClick={() => setCurrentPage(prev => Math.min(prev + 1, pagination.pages))}
                 disabled={currentPage === pagination.pages}
                 className="pagination-btn"

@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .blog-card-link {
@@ -38,7 +38,7 @@
 }
 
 .blog-image {
-  height: 200px;
+  height: 180px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -57,7 +57,7 @@
 }
 
 .blog-info {
-  padding: 1.5rem;
+  padding: .8rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -66,13 +66,13 @@
 .blog-meta {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   font-size: 0.85rem;
   color: #777;
 }
 
 .blog-info h3 {
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   font-size: 1.4rem;
   color: #333;
   display: -webkit-box;
@@ -85,7 +85,7 @@
 
 .blog-info p {
   color: #666;
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
   line-height: 1.6;
   flex-grow: 1;
 }
@@ -199,7 +199,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
 }
 
 .filter-button {
