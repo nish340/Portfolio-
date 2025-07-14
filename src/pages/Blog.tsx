@@ -93,7 +93,7 @@ const BlogPage = () => {
 
       <section className="blog-section section" style={{ paddingTop: '80px' }}>
         <div className="container">
-          {showCategories && (
+          {/* {showCategories && (
             <div className="filter-container">
               {categories.map((category, index) => (
                 <button
@@ -105,7 +105,7 @@ const BlogPage = () => {
                 </button>
               ))}
             </div>
-          )}
+          )} */}
 
           {filteredBlogs.length === 0 ? (
             <div className="no-blogs">
