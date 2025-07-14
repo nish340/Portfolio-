@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -35,14 +36,6 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-content">
         <Link to="/" className="logo">NS</Link>
-        
-        <div className="menu-toggle" onClick={toggleMenu}>
-          <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
         
         <ul className={`menu ${isMenuOpen ? 'active' : ''}`}>
           <li>
@@ -90,15 +83,6 @@ const Navbar = () => {
               Blog
             </Link>
           </li>
-          {/* <li>
-            <Link 
-              to="/testimonials" 
-              className={location.pathname === '/testimonials' ? 'active' : ''} 
-              onClick={closeMenu}
-            >
-              Testimonials
-            </Link>
-          </li> */}
           <li>
             <Link 
               to="/contact" 
@@ -108,7 +92,23 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
+          <li className="theme-toggle-mobile">
+            <ThemeToggle />
+          </li>
         </ul>
+        
+        <div className="navbar-right">
+          <div className="theme-toggle-desktop">
+            <ThemeToggle />
+          </div>
+          <div className="menu-toggle" onClick={toggleMenu}>
+            <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
   );

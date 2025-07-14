@@ -204,3 +204,51 @@
     padding: 1.5rem;
   }
 }
+
+/* Dark mode styles */
+:root.dark .availability-notice {
+  background-color: rgba(139, 92, 246, 0.1);
+  border-left-color: var(--color-accent);
+}
+
+:root.dark .availability-notice h3 {
+  color: var(--color-accent);
+}
+
+:root.dark .availability-notice p {
+  color: var(--color-text);
+}
+
+:root.dark .contact-item h3 {
+  color: var(--color-text);
+}
+
+:root.dark .contact-item a {
+  color: var(--color-gray-dark);
+}
+
+:root.dark .contact-item a:hover {
+  color: var(--color-accent);
+}
+
+:root.dark .social-links h3 {
+  color: var(--color-text);
+}
+
+:root.dark .social-icon {
+  background-color: var(--color-gray);
+}
+
+:root.dark .social-icon:hover {
+  background-color: var(--color-accent);
+}
+
+:root.dark .form-status.success {
+  background-color: rgba(76, 175, 80, 0.2);
+  border-color: #4caf50;
+}
+
+:root.dark .form-status.error {
+  background-color: rgba(244, 67, 54, 0.2);
+  border-color: #f44336;
+}

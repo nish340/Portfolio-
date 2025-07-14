@@ -201,3 +201,41 @@
     font-size: 1rem;
   }
 }
+
+/* Dark mode styles */
+:root.dark .testimonial-content {
+  background-color: var(--color-gray-light);
+}
+
+:root.dark .quote-mark {
+  color: var(--color-accent);
+}
+
+:root.dark .quote-text {
+  color: var(--color-text);
+}
+
+:root.dark .author-info h3 {
+  color: var(--color-text);
+}
+
+:root.dark .author-info p {
+  color: var(--color-gray-dark);
+}
+
+:root.dark .slider-arrow {
+  background-color: var(--color-gray-light);
+  color: var(--color-accent);
+}
+
+:root.dark .slider-dot {
+  background-color: var(--color-gray);
+}
+
+:root.dark .slider-dot.active {
+  background-color: var(--color-accent);
+}
+
+:root.dark .cta-section {
+  background-color: var(--color-gray-light);
+}

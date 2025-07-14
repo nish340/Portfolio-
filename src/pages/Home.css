@@ -476,3 +476,57 @@
     font-size: 2.5rem;
   }
 }
+
+/* Dark mode styles */
+:root.dark .hero-section {
+  background: linear-gradient(to right, var(--color-gray-light) 50%, var(--color-background) 50%);
+}
+
+:root.dark .about-preview,
+:root.dark .gallery-preview,
+:root.dark .contact-preview {
+  background-color: var(--color-gray-light);
+}
+
+:root.dark .image-container {
+  border-color: var(--color-gray);
+}
+
+:root.dark .availability-notice {
+  background-color: rgba(139, 92, 246, 0.1);
+  border-left-color: var(--color-accent);
+}
+
+:root.dark .availability-notice h3 {
+  color: var(--color-accent);
+}
+
+:root.dark .chat-icon {
+  background-color: var(--color-accent);
+}
+
+:root.dark .chat-icon:hover {
+  background-color: var(--color-accent-light);
+}
+
+:root.dark .no-blogs-content {
+  background-color: var(--color-gray-light);
+}
+
+:root.dark .no-blogs-content h3 {
+  color: var(--color-text);
+}
+
+:root.dark .no-blogs-content p {
+  color: var(--color-gray-dark);
+}
+
+:root.dark .coming-soon-animation .dot {
+  background: var(--color-accent);
+}
+
+@media (max-width: 960px) {
+  :root.dark .hero-section {
+    background: var(--color-gray-light);
+  }
+}

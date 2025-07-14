@@ -134,3 +134,18 @@
     flex-direction: column;
   }
 }
+
+/* Dark mode styles */
+:root.dark .project-link {
+  background-color: var(--color-gray-light);
+  color: var(--color-text);
+}
+
+:root.dark .project-link:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+:root.dark .project-links {
+  background-color: rgba(0, 0, 0, 0.8);
+}

@@ -181,3 +181,53 @@
     gap: 1rem;
   }
 }
+
+/* Dark mode styles */
+:root.dark .footer {
+  background-color: var(--color-gray-light);
+  color: var(--color-text);
+  border-top-color: var(--color-gray);
+}
+
+:root.dark .footer-logo {
+  color: var(--color-text);
+}
+
+:root.dark .footer-tagline,
+:root.dark .footer-links-column p,
+:root.dark .footer-bottom p {
+  color: var(--color-gray-dark);
+}
+
+:root.dark .footer-links-column h4 {
+  color: var(--color-text);
+}
+
+:root.dark .footer-links-column a {
+  color: var(--color-gray-dark);
+}
+
+:root.dark .footer-links-column a:hover {
+  color: var(--color-accent);
+}
+
+:root.dark .footer-bottom {
+  border-top-color: var(--color-gray);
+}
+
+:root.dark .back-to-top {
+  background-color: var(--color-accent);
+}
+
+:root.dark .back-to-top:hover {
+  background-color: var(--color-accent-light);
+}
+
+/* Dark mode social icons */
+:root.dark .social-icon-home {
+  background-color: var(--color-gray);
+}
+
+:root.dark .social-icon-home:hover {
+  background-color: var(--color-gray-dark);
+}

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
+import { ThemeProvider } from './hooks/use-theme';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -19,7 +20,8 @@ import Testimonials from "./pages/Testimonials";
 const App = () => {
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <ThemeProvider>
+        <BrowserRouter>
         <ScrollToTop />
         <SEOBoost />
         <Navbar />
@@ -38,7 +40,8 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
-      </BrowserRouter>
+        </BrowserRouter>
+      </ThemeProvider>
     </HelmetProvider>
   );
 };

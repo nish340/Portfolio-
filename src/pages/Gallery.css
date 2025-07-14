@@ -170,3 +170,25 @@
     width: 95%;
   }
 }
+
+/* Dark mode styles */
+:root.dark .modal-content {
+  background-color: var(--color-gray-light);
+}
+
+:root.dark .modal-caption {
+  background-color: var(--color-gray-light);
+}
+
+:root.dark .modal-caption h3 {
+  color: var(--color-text);
+}
+
+:root.dark .modal-caption p {
+  color: var(--color-gray-dark);
+}
+
+:root.dark .modal-close {
+  background-color: var(--color-gray-light);
+  color: var(--color-text);
+}

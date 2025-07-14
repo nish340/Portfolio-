@@ -42,3 +42,8 @@ main {
     padding: 4rem 0 2rem;
   }
 }
+
+/* Dark mode styles */
+:root.dark .page-header {
+  background-color: var(--color-gray-light);
+}

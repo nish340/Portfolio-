@@ -50,3 +50,16 @@
     font-size: 1rem;
   }
 }
+
+/* Dark mode styles */
+:root.dark .not-found-content h1 {
+  color: var(--color-accent);
+}
+
+:root.dark .not-found-content h2 {
+  color: var(--color-text);
+}
+
+:root.dark .not-found-content p {
+  color: var(--color-gray-dark);
+}

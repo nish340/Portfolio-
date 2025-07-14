@@ -377,3 +377,56 @@
     padding: 0.3rem 0.6rem;
   }
 }
+
+/* Dark mode styles */
+:root.dark .services-locations {
+  background-color: var(--color-gray);
+}
+
+:root.dark .tech-stack {
+  background-color: var(--color-gray-light);
+}
+
+:root.dark .services-list {
+  background-color: var(--color-background);
+}
+
+:root.dark .service-icon {
+  background-color: var(--color-gray);
+}
+
+:root.dark .service-content h2 {
+  color: var(--color-accent);
+}
+
+:root.dark .services-process {
+  background-color: var(--color-gray-light);
+}
+
+:root.dark .process-number {
+  background-color: var(--color-accent);
+}
+
+:root.dark .process-step h3 {
+  color: var(--color-text);
+}
+
+:root.dark .services-locations-detail {
+  background-color: var(--color-background);
+}
+
+:root.dark .location-item h3 {
+  color: var(--color-accent);
+}
+
+:root.dark .services-faq {
+  background-color: var(--color-background);
+}
+
+:root.dark .faq-item {
+  border-bottom-color: var(--color-gray);
+}
+
+:root.dark .faq-item h3 {
+  color: var(--color-accent);
+}

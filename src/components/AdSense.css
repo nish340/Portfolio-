@@ -38,3 +38,9 @@
     margin: 1rem 0;
   }
 }
+
+/* Dark mode styles */
+:root.dark .adsense-container {
+  background-color: var(--color-gray-light);
+  border-radius: 8px;
+}
