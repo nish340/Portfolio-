@@ -74,15 +74,6 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/services" 
-              className={location.pathname === '/services' ? 'active' : ''} 
-              onClick={closeMenu}
-            >
-              Services
-            </Link>
-          </li>
-          <li>
-            <Link 
               to="/gallery" 
               className={location.pathname === '/gallery' ? 'active' : ''} 
               onClick={closeMenu}
