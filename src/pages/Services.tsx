@@ -5,65 +5,79 @@ import './Services.css';
 
 const Services = () => {
   return (
-    <div className="services-page">
+    <div className="services-page" style={{marginTop:'50px'}}>
       <SEOHelmet pageName="services" />
 
       <section className="services-hero">
         <div className="container">
           <h1>Full Stack Development Services</h1>
-          <p className="services-subtitle">End-to-end web development solutions for startups, businesses, and innovative projects worldwide</p>
+          <p className="services-subtitle">End-to-end web development solutions with 3+ years of experience across Healthcare IT, Fintech, E-commerce, and modern cloud technologies</p>
           <div className="services-cta">
             <Link to="/contact" className="btn btn-primary">Get a Quote</Link>
             <Link to="/projects" className="btn btn-outline">View My Work</Link>
           </div>
         </div>
       </section>
-      {/* 
-      <section className="services-locations section">
-        <div className="container">
-          <div className="locations-wrapper">
-            <p>Serving clients in <strong>Chandigarh</strong>, <strong>India</strong>, <strong>USA</strong>, <strong>UK</strong>, <strong>Canada</strong>, <strong>Australia</strong> and worldwide</p>
-          </div>
-        </div>
-      </section> */}
 
       <section className="services-overview section">
         <div className="container">
           <h2 className="section-title">How I Can Help Your Business</h2>
-          <p className="section-description">
-            I deliver high-quality, scalable web applications using <strong>MERN stack</strong> (MongoDB, Express, React, Node.js) and
-            <strong> MEAN stack</strong> (MongoDB, Express, Angular, Node.js) that help businesses grow and succeed in the digital landscape.
-            With expertise in modern JavaScript/TypeScript frameworks and a focus on performance, I create solutions that are both
-            technically excellent and user-friendly.
+          <p className="" style={{textAlign:'left',fontSize:'18px'}}>
+            I deliver high-quality, scalable web applications using <strong>MERN stack</strong> and <strong>MEAN stack</strong> across multiple industries.
+            My expertise includes <strong>Healthcare IT</strong> (HIPAA compliance, HL7 FHIR), <strong>Fintech</strong> (blockchain, Web3), 
+            <strong>E-commerce</strong>, and modern technologies like <strong>AWS</strong>, <strong>Google Cloud</strong>, <strong>CI/CD pipelines</strong>, and <strong>SEO optimization</strong>.
           </p>
         </div>
       </section>
 
       <section className="tech-stack section">
         <div className="container">
-          <h2 className="section-title">Technologies I Work With</h2>
-          {/* <div className="tech-tags">
-            <span className="tech-tag">React</span>
-            <span className="tech-tag">Angular</span>
-            <span className="tech-tag">Node.js</span>
-            <span className="tech-tag">Express</span>
-            <span className="tech-tag">NestJS</span>
-            <span className="tech-tag">Next.js</span>
-            <span className="tech-tag">MongoDB</span>
-            <span className="tech-tag">PostgreSQL</span>
-            <span className="tech-tag">TypeScript</span>
-            <span className="tech-tag">JavaScript</span>
-            <span className="tech-tag">Redux</span>
-            <span className="tech-tag">GraphQL</span>
-            <span className="tech-tag">REST API</span>
-            <span className="tech-tag">Tailwind CSS</span>
-            <span className="tech-tag">Material UI</span>
-            <span className="tech-tag">Docker</span>
-            <span className="tech-tag">AWS</span>
-            <span className="tech-tag">Vercel</span>
-            <span className="tech-tag">CI/CD</span>
-            <span className="tech-tag">OpenAI</span>
-          </div> */}
+          <h2 className="section-title">Technology Stack & Expertise</h2>
+          <div className="tech-categories">
+            <div className="tech-category">
+              <h3>Healthcare Standards</h3>
+              <div style={{padding:'15px 0px',textAlign:'left', display:'flex',flexWrap:'wrap',gap:'10px'}}>
+                <span className="tech-tag">HIPAA Compliance</span>
+                <span className="tech-tag">HL7 FHIR</span>
+                <span className="tech-tag">HL7 v2</span>
+                <span className="tech-tag">SMART on FHIR</span>
+                <span className="tech-tag">Healthcare Interoperability</span>
+              </div>
+            </div>
+            <div className="tech-category">
+              <h3>Core Development</h3>
+              <div style={{padding:'15px 0px',textAlign:'left', display:'flex',flexWrap:'wrap',gap:'10px'}}>
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">Angular</span>
+                <span className="tech-tag">Node.js</span>
+                <span className="tech-tag">Express</span>
+                <span className="tech-tag">NestJS</span>
+                <span className="tech-tag">TypeScript</span>
+                <span className="tech-tag">JavaScript</span>
+                <span className="tech-tag">MongoDB</span>
+                <span className="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+            <div className="tech-category">
+              <h3>Cloud & DevOps</h3>
+              <div style={{padding:'15px 0px',textAlign:'left', display:'flex',flexWrap:'wrap',gap:'10px'}}>
+                <span className="tech-tag">AWS</span>
+                <span className="tech-tag">Google Cloud</span>
+                <span className="tech-tag">CI/CD Pipelines</span>
+                <span className="tech-tag">GitHub Actions</span>
+                <span className="tech-tag">Docker</span>
+              </div>
+            </div>
+            <div className="tech-category">
+              <h3>Emerging Technologies</h3>
+              <div style={{padding:'15px 0px',textAlign:'left', display:'flex',flexWrap:'wrap',gap:'10px'}}>
+                <span className="tech-tag">Blockchain</span>
+                <span className="tech-tag">Web3</span>
+                <span className="tech-tag">SEO Optimization</span>
+                <span className="tech-tag">Site Performance</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -72,16 +86,16 @@ const Services = () => {
           <div className="service-card">
             <div className="service-icon frontend-icon"></div>
             <div className="service-content">
-              <h2>Frontend Development with React</h2>
+              <h2>Frontend Development</h2>
               <p>
-                Creating responsive, interactive, and high-performance user interfaces using React, Angular, and modern frontend technologies.
+                Creating responsive, interactive, and high-performance user interfaces using React, Angular, and modern frontend technologies across all industries.
               </p>
               <ul className="service-features">
                 <li>Performance-optimized React and Angular applications</li>
-                <li>State management with Redux, Context API, or Zustand</li>
-                <li>Responsive UI with Tailwind CSS, Material UI, and Bootstrap</li>
-                <li>Interactive data visualizations and dashboards</li>
-                <li>Accessibility-compliant interfaces (WCAG)</li>
+                <li>Healthcare UI with HIPAA compliance considerations</li>
+                <li>Fintech dashboards and trading interfaces</li>
+                <li>E-commerce platforms and admin panels</li>
+                <li>SEO-optimized and accessible interfaces</li>
               </ul>
               <Link to="/contact" className="btn btn-primary">Hire Me for Frontend</Link>
             </div>
@@ -92,13 +106,13 @@ const Services = () => {
             <div className="service-content">
               <h2>Backend API Development</h2>
               <p>
-                Building robust, secure, and scalable backend services using Node.js, Express, and NestJS to power your applications.
+                Building robust, secure, and scalable backend services using Node.js, Express, and NestJS for healthcare, fintech, and e-commerce applications.
               </p>
               <ul className="service-features">
                 <li>RESTful API design and implementation</li>
-                <li>GraphQL API development</li>
-                <li>Authentication and authorization systems</li>
-                <li>Database design and optimization (MongoDB, PostgreSQL)</li>
+                <li>Healthcare APIs with HL7 FHIR integration</li>
+                <li>Blockchain and Web3 backend services</li>
+                <li>Payment processing and fintech APIs</li>
                 <li>Microservices architecture</li>
               </ul>
               <Link to="/contact" className="btn btn-primary">Hire Me for Backend</Link>
@@ -108,54 +122,54 @@ const Services = () => {
           <div className="service-card">
             <div className="service-icon fullstack-icon"></div>
             <div className="service-content">
-              <h2>Full-Stack MVP Development</h2>
+              <h2>Full-Stack Application Development</h2>
               <p>
-                Turning your startup idea into a working Minimum Viable Product with clean code and scalable architecture using MERN or MEAN stack.
+                End-to-end application development across healthcare, fintech, e-commerce, and SaaS platforms with modern architecture and best practices.
               </p>
               <ul className="service-features">
-                <li>End-to-end application development</li>
+                <li>Healthcare platforms with HIPAA compliance</li>
+                <li>Crypto exchanges and blockchain applications</li>
+                <li>E-commerce and marketplace solutions</li>
                 <li>SaaS platform development</li>
-                <li>Startup-ready MVPs with essential features</li>
-                <li>Scalable architecture for future growth</li>
-                <li>Technical consultation and planning</li>
+                <li>All-in-one business management systems</li>
               </ul>
-              <Link to="/contact" className="btn btn-primary">Let's Build Your MVP</Link>
+              <Link to="/contact" className="btn btn-primary">Build Your Application</Link>
             </div>
           </div>
 
           <div className="service-card">
             <div className="service-icon devops-icon"></div>
             <div className="service-content">
-              <h2>DevOps & Deployment</h2>
+              <h2>Cloud & DevOps Solutions</h2>
               <p>
-                Setting up efficient deployment pipelines and infrastructure to ensure your application runs smoothly in production.
+                Modern cloud infrastructure and deployment solutions for applications across all industries with focus on security, scalability, and performance.
               </p>
               <ul className="service-features">
-                <li>Docker containerization</li>
-                <li>CI/CD pipeline setup</li>
-                <li>AWS cloud infrastructure</li>
-                <li>Vercel and Netlify deployments</li>
+                <li>AWS and Google Cloud infrastructure setup</li>
+                <li>CI/CD pipelines with GitHub Actions</li>
+                <li>Docker containerization and deployment</li>
                 <li>Performance monitoring and optimization</li>
+                <li>SEO optimization and site performance</li>
               </ul>
-              <Link to="/contact" className="btn btn-primary">Get DevOps Help</Link>
+              <Link to="/contact" className="btn btn-primary">Optimize Your Infrastructure</Link>
             </div>
           </div>
 
           <div className="service-card">
             <div className="service-icon ai-icon"></div>
             <div className="service-content">
-              <h2>AI Integration Services</h2>
+              <h2>Blockchain & Modern Tech Integration</h2>
               <p>
-                Enhancing your applications with artificial intelligence capabilities through OpenAI and other AI service integrations.
+                Integrating cutting-edge technologies including blockchain, Web3, and AI to create innovative healthcare and business solutions.
               </p>
               <ul className="service-features">
-                <li>ChatGPT-powered conversational interfaces</li>
-                <li>OpenAI API integration</li>
-                <li>AI-powered content generation</li>
-                <li>Intelligent search and recommendations</li>
-                <li>Custom AI solutions for your business needs</li>
+                <li>Blockchain integration for secure healthcare records</li>
+                <li>Web3 applications and smart contracts</li>
+                <li>AI-powered healthcare analytics</li>
+                <li>Advanced SEO and site optimization</li>
+                <li>Modern tech stack implementation</li>
               </ul>
-              <Link to="/contact" className="btn btn-primary">Add AI to Your App</Link>
+              <Link to="/contact" className="btn btn-primary">Modernize with Blockchain</Link>
             </div>
           </div>
         </div>
@@ -231,7 +245,7 @@ const Services = () => {
         </div>
       </section>
       
-      <section className="services-faq section">
+      {/* <section className="services-faq section">
         <div className="container">
           <h2 className="section-title">Frequently Asked Questions</h2>
           <div className="faq-list">
@@ -261,7 +275,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Hidden SEO Keywords Section - Visible to search engines but not to users */}
       <div className="seo-keywords-hidden">

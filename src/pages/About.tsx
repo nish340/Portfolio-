@@ -15,31 +15,48 @@ const About = () => {
     }, []);
 
     const skills = [
-        { name: "Node.js", level: 85 },
-        { name: "Express.js", level: 90 },
-        { name: "React", level: 85 },
-        { name: "Angular", level: 80 },
-        { name: "JavaScript", level: 90 },
-        { name: "TypeScript", level: 80 },
-        { name: "NestJS", level: 75 },
-        { name: "MongoDB", level: 80 },
-        { name: "PostgreSql", level: 80 },
-        { name: "HTML5", level: 95 },
-        { name: "CSS/SCSS", level: 85 },
-        { name: "Bootstrap", level: 80 },
-        { name: "Git/GitHub", level: 90 },
-        { name: "AWS S3", level: 70 },
-        { name: "REST APIs", level: 90 },
-        { name: "AWS EC2", level: 60 },
-        { name: "Third Pary Integrations", level: 90 },
-        { name: "System Architecture", level: 75 },
-        { name: "Software Design Patterns", level: 70 },
-        { name: "Problem Solving", level: 85 },
-        { name: "API Design & Documentation", level: 80 },
-        { name: "Performance Optimization", level: 75 },
-        { name: "Debugging & Troubleshooting", level: 90 },
-        { name: "Clean Code Practices", level: 85 },
-
+        // Healthcare IT Expertise
+        { name: "HIPAA Compliance", level: 95 },
+        { name: "HL7 FHIR", level: 90 },
+        { name: "HL7 v2", level: 85 },
+        { name: "Healthcare Interoperability", level: 90 },
+        { name: "SMART on FHIR", level: 85 },
+        { name: "EHR/EMR Systems", level: 90 },
+        { name: "Practice Management", level: 85 },
+        { name: "Telehealth Services", level: 80 },
+        { name: "Medical Billing Software", level: 85 },
+        { name: "Healthcare APIs", level: 90 },
+        
+        // Core Development Skills
+        { name: "Node.js", level: 90 },
+        { name: "Express.js", level: 95 },
+        { name: "React", level: 90 },
+        { name: "Angular", level: 85 },
+        { name: "JavaScript", level: 95 },
+        { name: "TypeScript", level: 85 },
+        { name: "NestJS", level: 80 },
+        { name: "MongoDB", level: 85 },
+        { name: "PostgreSQL", level: 85 },
+        
+        // Cloud & DevOps
+        { name: "AWS", level: 80 },
+        { name: "Google Cloud", level: 75 },
+        { name: "CI/CD Pipelines", level: 80 },
+        { name: "Docker", level: 75 },
+        { name: "GitHub Actions", level: 80 },
+        
+        // Emerging Technologies
+        { name: "Blockchain", level: 70 },
+        { name: "Web3", level: 65 },
+        { name: "SEO Optimization", level: 85 },
+        { name: "Site Performance", level: 90 },
+        
+        // General Skills
+        { name: "REST APIs", level: 95 },
+        { name: "System Architecture", level: 85 },
+        { name: "Third Party Integrations", level: 95 },
+        { name: "Problem Solving", level: 90 },
+        { name: "Clean Code Practices", level: 90 },
     ];
 
     return (
@@ -59,8 +76,8 @@ const About = () => {
                         </div>
                         <div className="about-info">
                             <h2 className="section-title">About Me</h2>
-                            <p>Hi, I’m <strong>Nishchay Sharma</strong> — a Full Stack Developer based in Chandigarh, India, with 2.5+ years of experience crafting fast, scalable, and user-first web applications.</p>
-                            <p>I specialize in the MERN and MEAN stacks, and have built everything from healthcare platforms and CRMs to crypto exchanges and e-commerce apps. My work is all about clean architecture, seamless APIs, and interfaces users actually enjoy.</p>
+                            <p>Hi, I’m <strong>Nishchay Sharma</strong> — a Healthcare IT Full Stack Developer based in Chandigarh, India, with 3+ years of specialized experience in healthcare technology solutions crafting fast, scalable, and user-first web applications.</p>
+                            <p>My core expertise lies in building HIPAA-compliant healthcare platforms, EHR/EMR systems, medical practice management solutions, and healthcare interoperability systems. I specialize in HL7 FHIR integration, SMART on FHIR applications, telehealth services, and secure medical billing software. My work is all about clean architecture, seamless APIs, and interfaces users actually enjoy.</p>
                             <p>I hold a Master's in Computer Science and have a passion for writing code that solves real-world problems. When I’m not building something new, I’m usually exploring tools, sharpening my skills, or helping others learn through collaboration.</p>
 
                             <div className="personal-info">
@@ -75,6 +92,10 @@ const About = () => {
                                 <div className="info-item">
                                     <span className="info-label">Location:</span>
                                     <span className="info-value">Chandigarh, India</span>
+                                </div>
+                                <div className="info-item">
+                                    <span className="info-label">Experience:</span>
+                                    <span className="info-value">3+ Years Healthcare IT</span>
                                 </div>
                                 <div className="info-item">
                                     <span className="info-label">Availability:</span>

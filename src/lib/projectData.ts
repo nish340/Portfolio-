@@ -26,7 +26,7 @@ export const projects: Project[] = [
     description: 'A comprehensive Electronic Health Record and Revenue Cycle Management system for healthcare providers with patient management, billing, and reporting features.',
     image: images.project2,
     category: 'Healthcare',
-    tech: ['React', 'Node.js', 'MongoDB', 'Express', 'HIPAA Compliance'],
+    tech: ['React', 'Node.js', 'MongoDB', 'Express', 'HIPAA Compliance', 'HL7 FHIR', 'Healthcare APIs'],
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     description: 'A secure cryptocurrency exchange platform with real-time trading, wallet management, and advanced charting capabilities.',
     image: images.platypus,
     category: 'Finance',
-    tech: ['React', 'Node.js', 'WebSockets', 'Blockchain', 'Express', 'Coingecko API'],
+    tech: ['React', 'Node.js', 'WebSockets', 'Blockchain', 'Web3', 'Express', 'Coingecko API'],
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     description: 'FitLife is an all-in-one fitness companion app that helps users stay on top of their health goals. It combines a calorie tracker, diet planner, and workout logging system into one seamless experience',
     image: images.fitnessOne,
     category: 'Health & Fitness',
-    tech: ['React', 'vite', 'Tailwind', 'Auth0', 'Typescript'],
+    tech: ['React', 'Vite', 'Tailwind', 'Auth0', 'TypeScript', 'AWS', 'CI/CD'],
     github: 'https://github.com/nish340/fitlife',
     demo: 'https://fitlife.nishchay.online/'
   },
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     description: "Finance Tracker is a personal finance management app that helps users track their income, expenses, and savings goals. It provides insights into spending habits and financial health.",
     image: images.financeOne,
     category: 'Finance',
-    tech: ['React', 'express', 'typescript', 'MongoDb', 'Typescript'],
+    tech: ['React', 'Express', 'TypeScript', 'MongoDB', 'Google Cloud', 'SEO Optimization'],
     github: "https://github.com/nish340/financeTraker",
     demo: 'https://financeTraker.nishchay.online/'
   },
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     description: 'A delightful e-commerce platform for artisanal chocolate products with subscription services, gift options, and personalized recommendations.',
     image: images.project3,
     category: 'E-commerce',
-    tech: ['React', 'Redux', 'Stripe', 'Nest.js', 'MongoDB'],
+    tech: ['React', 'Redux', 'Stripe', 'NestJS', 'MongoDB', 'AWS', 'Site Performance'],
     github: 'https://github.com/nish340/chocobliss-e-commerce',
     demo: 'https://chocobliss.nishchay.online/'
   },
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     description: 'An interactive e-learning platform with course creation tools, student progress tracking, and integrated video conferencing for live classes.',
     image: images.project6,
     category: 'Education',
-    tech: ['React', 'Material UI', 'Express', 'MongoDB', 'Auth0']
+    tech: ['React', 'Material UI', 'Express', 'MongoDB', 'Auth0', 'Google Cloud', 'CI/CD']
   },
   {
     id: 7,
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     description: 'A robust cryptocurrency trading platform with advanced security features, real-time market data, and automated trading options. Supports multi-currency wallets and instant deposits/withdrawals.',
     image: images.project4,
     category: 'Finance',
-    tech: ['React', 'WebSockets', 'Node.js', 'PostgreSQL', 'JWT Auth'],
+    tech: ['React', 'WebSockets', 'Node.js', 'PostgreSQL', 'JWT Auth', 'Blockchain', 'Web3'],
   },
   {
     id: 8,

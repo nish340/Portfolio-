@@ -125,8 +125,8 @@ const Home = () => {
         <div className="container hero-content">
           <div className="hero-text fade-in">
             <h1>Hi, I'm <span className="highlight">Nishchay Sharma</span></h1>
-            <h2>Full Stack Developer</h2>
-            <p>Who turns ideas into interactive digital experiences. From backend logic to frontend finesse, I build web solutions that are fast, reliable, and user-friendly.</p>
+            <h2>Full Stack Software Engineer</h2>
+            <p>3+ years of experience building scalable web applications across Healthcare IT, Fintech, E-commerce, and SaaS platforms. Expert in HIPAA compliance, blockchain, AWS, Google Cloud, and modern development practices.</p>
             <div className="social-links-home">
               <a href="https://github.com/nish340" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tooltip="Visit GitHub">
                 <i className="social-icon-home github"></i>
@@ -195,8 +195,8 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">About Me</h2>
           <div className="about-content">
-            <p>Hi, I'm <strong>Nishchay Sharma</strong> — a Full Stack Developer based in Chandigarh, India, with 2.5+ years of experience crafting fast, scalable, and user-first web applications.</p>
-            <p>I specialize in the MERN and MEAN stacks, and have built everything from healthcare platforms and CRMs to crypto exchanges and e-commerce apps. My work is all about clean architecture, seamless APIs, and interfaces users actually enjoy.</p>
+            <p>Hi, I'm <strong>Nishchay Sharma</strong> — a Full Stack Software Engineer based in Chandigarh, India, with 3+ years of experience crafting scalable, secure web applications across diverse industries.</p>
+            <p>My expertise spans Healthcare IT (HIPAA compliance, HL7 FHIR, EHR/EMR systems), Fintech (crypto exchanges, blockchain, Web3), E-commerce platforms, and modern cloud technologies including AWS, Google Cloud, CI/CD pipelines, and SEO optimization. I build solutions that are fast, secure, and user-focused.</p>
             <Link to="/about" className="btn btn-primary">Learn More</Link>
           </div>
         </div>

@@ -7,11 +7,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
+
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -26,7 +26,7 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -36,57 +36,66 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-content">
         <Link to="/" className="logo">NS</Link>
-        
+
         <ul className={`menu ${isMenuOpen ? 'active' : ''}`}>
           <li>
-            <Link 
-              to="/" 
-              className={location.pathname === '/' ? 'active' : ''} 
+            <Link
+              to="/"
+              className={location.pathname === '/' ? 'active' : ''}
               onClick={closeMenu}
             >
               Home
             </Link>
           </li>
           <li>
-            <Link 
-              to="/about" 
-              className={location.pathname === '/about' ? 'active' : ''} 
+            <Link
+              to="/about"
+              className={location.pathname === '/about' ? 'active' : ''}
               onClick={closeMenu}
             >
               About
             </Link>
           </li>
           <li>
-            <Link 
-              to="/projects" 
-              className={location.pathname === '/projects' ? 'active' : ''} 
+            <Link
+              to="/projects"
+              className={location.pathname === '/projects' ? 'active' : ''}
               onClick={closeMenu}
             >
               Projects
             </Link>
           </li>
           <li>
-            <Link 
-              to="/gallery" 
-              className={location.pathname === '/gallery' ? 'active' : ''} 
+            <Link
+              to="/gallery"
+              className={location.pathname === '/gallery' ? 'active' : ''}
               onClick={closeMenu}
             >
               Gallery
             </Link>
           </li>
           <li>
-            <Link 
-              to="/blog" 
-              className={location.pathname.startsWith('/blog') ? 'active' : ''} 
+            <Link
+              to="/services"
+              className={location.pathname === '/services' ? 'active' : ''}
+              onClick={closeMenu}
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog"
+              className={location.pathname.startsWith('/blog') ? 'active' : ''}
               onClick={closeMenu}
             >
               Blog
             </Link>
           </li>
           <li>
-            <Link 
-              to="/contact" 
-              className={location.pathname === '/contact' ? 'active' : ''} 
+            <Link
+              to="/contact"
+              className={location.pathname === '/contact' ? 'active' : ''}
               onClick={closeMenu}
             >
               Contact
@@ -96,7 +105,7 @@ const Navbar = () => {
             <ThemeToggle />
           </li>
         </ul>
-        
+
         <div className="navbar-right">
           <div className="theme-toggle-desktop">
             <ThemeToggle />
