@@ -99,6 +99,48 @@ export const projects: Project[] = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Rozerpay'],
     github: 'https://github.com/nish340/React-Admin-Dashboard'
   },
+  {
+    id: 10,
+    title: 'ApnaHimachal – Travel & Tourism Portal',
+    description: 'A comprehensive travel and tourism portal for Himachal Pradesh featuring destination guides, hotel listings, trekking routes, and local experiences for tourists.',
+    image: '/placeholder.svg',
+    category: 'Travel',
+    tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Google Maps API', 'Razorpay'],
+    demo: 'https://apnahimachal.com'
+  },
+  {
+    id: 11,
+    title: 'MyAdvanceSolutions – Business Solutions Platform',
+    description: 'A full-featured business solutions platform offering CRM, project management, invoicing, and client portal features for small to medium enterprises.',
+    image: '/placeholder.svg',
+    category: 'SaaS',
+    tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS', 'Stripe', 'REST APIs'],
+    demo: 'https://myadvancesolutions.com'
+  },
+  {
+    id: 12,
+    title: 'ParaClean – Cleaning Services Platform',
+    description: 'An on-demand cleaning services booking platform built on Replit with real-time scheduling, service provider management, and automated notifications.',
+    image: '/placeholder.svg',
+    category: 'On-Demand',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Replit', 'Twilio', 'Stripe'],
+  },
+  {
+    id: 13,
+    title: 'Survey – Data Collection Platform',
+    description: 'A dynamic survey and data collection platform with customizable form builders, real-time analytics, response tracking, and exportable reports.',
+    image: '/placeholder.svg',
+    category: 'SaaS',
+    tech: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Chart.js', 'AWS S3', 'REST APIs'],
+  },
+  {
+    id: 14,
+    title: 'ATech – Technology Services Website',
+    description: 'A modern technology services company website showcasing IT solutions, software development services, and digital transformation offerings with a sleek UI.',
+    image: '/placeholder.svg',
+    category: 'Corporate',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'EmailJS', 'SEO Optimization'],
+  },
 ];
 
 // Gallery images data
