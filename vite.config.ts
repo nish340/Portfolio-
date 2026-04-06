@@ -5,10 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/Portfolio-/" : "/",
   server: {
     host: "::",
     port: 8080,
-    // Add this line for SPA routing support
     historyApiFallback: true,
   },
   plugins: [
