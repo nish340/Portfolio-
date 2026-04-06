@@ -68,10 +68,16 @@
 <body>
   <script>
     (function(){
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect !== location.href) {
-        history.replaceState(null, null, redirect);
+      var p = window.location.search.match(/[?&]p=([^&]*)/);
+      if (p) {
+        var q = window.location.search.match(/[?&]q=([^&]*)/);
+        window.history.replaceState(
+          null, null,
+          window.location.pathname.split('?')[0] +
+          decodeURIComponent(p[1]).replace(/~and~/g, '&') +
+          (q ? '?' + decodeURIComponent(q[1]).replace(/~and~/g, '&') : '') +
+          window.location.hash
+        );
       }
     })();
   </script>
