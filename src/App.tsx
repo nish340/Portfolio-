@@ -21,7 +21,7 @@ const App = () => {
   return (
     <HelmetProvider>
       <ThemeProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/Portfolio-">
         <ScrollToTop />
         <SEOBoost />
         <Navbar />
