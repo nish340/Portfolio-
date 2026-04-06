@@ -15,6 +15,9 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
   ].filter(Boolean),
+  build: {
+    assetsDir: "assets",
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
