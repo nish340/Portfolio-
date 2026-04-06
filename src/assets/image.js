@@ -90,6 +90,38 @@ import project6_5 from './images/gallaryImages/project6/Screenshot 2025-05-20 11
 import project6_6 from './images/gallaryImages/project6/Screenshot 2025-05-20 115616.png';
 import project6_7 from './images/gallaryImages/project6/Screenshot 2025-05-20 115639.png';
 
+// project7-11 thumbnails
+import project7 from './images/project7.png';
+import project8 from './images/project8.png';
+import project9 from './images/project9.png';
+import project10 from './images/project10.png';
+import project11 from './images/project11.png';
+
+// project7 gallery (ApnaHimachal)
+import project7_1 from './images/gallaryImages/project7/placeholder_1.png';
+import project7_2 from './images/gallaryImages/project7/placeholder_2.png';
+import project7_3 from './images/gallaryImages/project7/placeholder_3.png';
+
+// project8 gallery (MyAdvanceSolutions)
+import project8_1 from './images/gallaryImages/project8/placeholder_1.png';
+import project8_2 from './images/gallaryImages/project8/placeholder_2.png';
+import project8_3 from './images/gallaryImages/project8/placeholder_3.png';
+
+// project9 gallery (ParaClean)
+import project9_1 from './images/gallaryImages/project9/placeholder_1.png';
+import project9_2 from './images/gallaryImages/project9/placeholder_2.png';
+import project9_3 from './images/gallaryImages/project9/placeholder_3.png';
+
+// project10 gallery (Survey)
+import project10_1 from './images/gallaryImages/project10/placeholder_1.png';
+import project10_2 from './images/gallaryImages/project10/placeholder_2.png';
+import project10_3 from './images/gallaryImages/project10/placeholder_3.png';
+
+// project11 gallery (ATech)
+import project11_1 from './images/gallaryImages/project11/placeholder_1.png';
+import project11_2 from './images/gallaryImages/project11/placeholder_2.png';
+import project11_3 from './images/gallaryImages/project11/placeholder_3.png';
+
 // next images
 import fitnessOne from './images/one five.png';
 import financeOne from './images/one.png';
@@ -173,7 +205,17 @@ export const images = {
   project6_6,
   project6_7,
   fitnessOne,
-  financeOne
+  financeOne,
+  project7,
+  project8,
+  project9,
+  project10,
+  project11,
+  project7_1, project7_2, project7_3,
+  project8_1, project8_2, project8_3,
+  project9_1, project9_2, project9_3,
+  project10_1, project10_2, project10_3,
+  project11_1, project11_2, project11_3,
 };
 
 // Export individual images
@@ -255,5 +297,15 @@ export {
   project6_6,
   project6_7,
   fitnessOne,
-  financeOne
+  financeOne,
+  project7,
+  project8,
+  project9,
+  project10,
+  project11,
+  project7_1, project7_2, project7_3,
+  project8_1, project8_2, project8_3,
+  project9_1, project9_2, project9_3,
+  project10_1, project10_2, project10_3,
+  project11_1, project11_2, project11_3,
 };
