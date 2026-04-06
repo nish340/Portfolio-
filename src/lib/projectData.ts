@@ -26,10 +26,55 @@ export const projects: Project[] = [
     description: 'A comprehensive Electronic Health Record and Revenue Cycle Management system for healthcare providers with patient management, billing, and reporting features.',
     image: images.project2,
     category: 'Healthcare',
+    demo: 'https://probillrcm.com/',
     tech: ['React', 'Node.js', 'MongoDB', 'Express', 'HIPAA Compliance', 'HL7 FHIR', 'Healthcare APIs'],
   },
   {
     id: 2,
+    title: 'ATech – Technology Services Website',
+    description: 'A modern technology services company website showcasing IT solutions, software development services, and digital transformation offerings with a sleek UI.',
+    image: images.project11,
+    category: 'Corporate',
+    demo:"https://atechaustralia.com.au/",
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'EmailJS', 'SEO Optimization'],
+  },
+  {
+    id: 3,
+    title: 'MyAdvanceSolutions – Business Solutions Platform',
+    description: 'A full-featured business solutions platform offering CRM, project management, invoicing, and client portal features for small to medium enterprises.',
+    image: images.project8,
+    category: 'SaaS',
+    tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS', 'Stripe', 'REST APIs'],
+    demo: 'https://myadvancesolution.com/'
+  },
+  {
+    id: 4,
+    title: 'ApnaHimachal – Travel & Tourism Portal',
+    description: 'A comprehensive travel and tourism portal for Himachal Pradesh featuring destination guides, hotel listings, trekking routes, and local experiences for tourists.',
+    image: images.project7,
+    category: 'Travel',
+    tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Google Maps API', 'Razorpay'],
+    demo: 'https://apnahimachal.com'
+  },
+  {
+    id: 5,
+    title: 'ParaClean – Cleaning Services Platform',
+    description: 'An on-demand cleaning services booking platform built on Replit with real-time scheduling, service provider management, and automated notifications.',
+    image: images.project9,
+    category: 'On-Demand',
+    demo:"https://www.paraclean.org/",
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Replit', 'Twilio', 'Stripe'],
+  },
+  {
+    id: 6,
+    title: 'Survey – Data Collection Platform',
+    description: 'A dynamic survey and data collection platform with customizable form builders, real-time analytics, response tracking, and exportable reports.',
+    image: images.project10,
+    category: 'SaaS',
+    tech: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Chart.js', 'AWS S3', 'REST APIs'],
+  },
+  {
+    id: 7,
     title: 'Platypus Crypto Exchange',
     description: 'A secure cryptocurrency exchange platform with real-time trading, wallet management, and advanced charting capabilities.',
     image: images.platypus,
@@ -37,37 +82,37 @@ export const projects: Project[] = [
     tech: ['React', 'Node.js', 'WebSockets', 'Blockchain', 'Web3', 'Express', 'Coingecko API'],
   },
   {
-    id: 3,
+    id: 8,
     title: 'FitLife – Fitness Tracker',
     description: 'FitLife is an all-in-one fitness companion app that helps users stay on top of their health goals. It combines a calorie tracker, diet planner, and workout logging system into one seamless experience',
     image: images.fitnessOne,
     category: 'Health & Fitness',
     tech: ['React', 'Vite', 'Tailwind', 'Auth0', 'TypeScript', 'AWS', 'CI/CD'],
     github: 'https://github.com/nish340/fitlife',
-    demo: 'https://fitlife.nishchay.online/'
+    // demo: 'https://fitlife.nishchay.online/'
   },
   {
-    id: 4,
-    title: "Finance Tracker - Personal Finance Management",
-    description: "Finance Tracker is a personal finance management app that helps users track their income, expenses, and savings goals. It provides insights into spending habits and financial health.",
+    id: 9,
+    title: 'Finance Tracker - Personal Finance Management',
+    description: 'Finance Tracker is a personal finance management app that helps users track their income, expenses, and savings goals. It provides insights into spending habits and financial health.',
     image: images.financeOne,
     category: 'Finance',
     tech: ['React', 'Express', 'TypeScript', 'MongoDB', 'Google Cloud', 'SEO Optimization'],
-    github: "https://github.com/nish340/financeTraker",
-    demo: 'https://financeTraker.nishchay.online/'
+    github: 'https://github.com/nish340/financeTraker',
+    // demo: 'https://financeTraker.nishchay.online/'
   },
   {
-    id: 5,
+    id: 10,
     title: 'ChocolateBliss – E-commerce Website',
     description: 'A delightful e-commerce platform for artisanal chocolate products with subscription services, gift options, and personalized recommendations.',
     image: images.project3,
     category: 'E-commerce',
     tech: ['React', 'Redux', 'Stripe', 'NestJS', 'MongoDB', 'AWS', 'Site Performance'],
     github: 'https://github.com/nish340/chocobliss-e-commerce',
-    demo: 'https://chocobliss.nishchay.online/'
+    // demo: 'https://chocobliss.nishchay.online/'
   },
   {
-    id: 6,
+    id: 11,
     title: 'LearnSphere – Online Learning Platform',
     description: 'An interactive e-learning platform with course creation tools, student progress tracking, and integrated video conferencing for live classes.',
     image: images.project6,
@@ -75,7 +120,7 @@ export const projects: Project[] = [
     tech: ['React', 'Material UI', 'Express', 'MongoDB', 'Auth0', 'Google Cloud', 'CI/CD']
   },
   {
-    id: 7,
+    id: 12,
     title: 'BitNest Exchange – Crypto Trading Platform',
     description: 'A robust cryptocurrency trading platform with advanced security features, real-time market data, and automated trading options. Supports multi-currency wallets and instant deposits/withdrawals.',
     image: images.project4,
@@ -83,7 +128,7 @@ export const projects: Project[] = [
     tech: ['React', 'WebSockets', 'Node.js', 'PostgreSQL', 'JWT Auth', 'Blockchain', 'Web3'],
   },
   {
-    id: 8,
+    id: 13,
     title: 'EventNest – Event Booking Platform',
     description: 'A comprehensive event management and booking platform with ticketing, venue selection, and attendee management features.',
     image: images.project5,
@@ -91,7 +136,7 @@ export const projects: Project[] = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Payment Gateway'],
   },
   {
-    id: 9,
+    id: 14,
     title: 'Ecommerce – Admin Dashboard',
     description: 'An admin dashboard for managing e-commerce operations, including product management, order tracking, and customer insights.',
     image: images.project1,
@@ -99,60 +144,18 @@ export const projects: Project[] = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Rozerpay'],
     github: 'https://github.com/nish340/React-Admin-Dashboard'
   },
-  {
-    id: 10,
-    title: 'ApnaHimachal – Travel & Tourism Portal',
-    description: 'A comprehensive travel and tourism portal for Himachal Pradesh featuring destination guides, hotel listings, trekking routes, and local experiences for tourists.',
-    image: '/placeholder.svg',
-    category: 'Travel',
-    tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Google Maps API', 'Razorpay'],
-    demo: 'https://apnahimachal.com'
-  },
-  {
-    id: 11,
-    title: 'MyAdvanceSolutions – Business Solutions Platform',
-    description: 'A full-featured business solutions platform offering CRM, project management, invoicing, and client portal features for small to medium enterprises.',
-    image: '/placeholder.svg',
-    category: 'SaaS',
-    tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS', 'Stripe', 'REST APIs'],
-    demo: 'https://myadvancesolutions.com'
-  },
-  {
-    id: 12,
-    title: 'ParaClean – Cleaning Services Platform',
-    description: 'An on-demand cleaning services booking platform built on Replit with real-time scheduling, service provider management, and automated notifications.',
-    image: '/placeholder.svg',
-    category: 'On-Demand',
-    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Replit', 'Twilio', 'Stripe'],
-  },
-  {
-    id: 13,
-    title: 'Survey – Data Collection Platform',
-    description: 'A dynamic survey and data collection platform with customizable form builders, real-time analytics, response tracking, and exportable reports.',
-    image: '/placeholder.svg',
-    category: 'SaaS',
-    tech: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Chart.js', 'AWS S3', 'REST APIs'],
-  },
-  {
-    id: 14,
-    title: 'ATech – Technology Services Website',
-    description: 'A modern technology services company website showcasing IT solutions, software development services, and digital transformation offerings with a sleek UI.',
-    image: '/placeholder.svg',
-    category: 'Corporate',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'EmailJS', 'SEO Optimization'],
-  },
 ];
 
 // Gallery images data
 export const galleryImages: GalleryImage[] = [
-  // Project 1 images - Probill EHR & RCM
+  // Probill EHR & RCM
   { id: 'p1_1', src: images.project1_1, alt: 'Probill EHR & RCM Screenshot 1', project: 'Probill EHR & RCM' },
   { id: 'p1_2', src: images.project1_2, alt: 'Probill EHR & RCM Screenshot 2', project: 'Probill EHR & RCM' },
   { id: 'p1_3', src: images.project1_3, alt: 'Probill EHR & RCM Screenshot 3', project: 'Probill EHR & RCM' },
   { id: 'p1_4', src: images.project1_4, alt: 'Probill EHR & RCM Screenshot 4', project: 'Probill EHR & RCM' },
   { id: 'p1_5', src: images.project1_5, alt: 'Probill EHR & RCM Screenshot 5', project: 'Probill EHR & RCM' },
 
-  // Project 2 images - ChocolateBliss – E-commerce Website
+  // ChocolateBliss
   { id: 'p2_1', src: images.project2_1, alt: 'ChocolateBliss 1', project: 'ChocolateBliss' },
   { id: 'p2_2', src: images.project2_2, alt: 'ChocolateBliss 2', project: 'ChocolateBliss' },
   { id: 'p2_3', src: images.project2_3, alt: 'ChocolateBliss 3', project: 'ChocolateBliss' },
@@ -167,7 +170,7 @@ export const galleryImages: GalleryImage[] = [
   { id: 'p2_12', src: images.project2_12, alt: 'ChocolateBliss 12', project: 'ChocolateBliss' },
   { id: 'p2_13', src: images.project2_13, alt: 'ChocolateBliss 13', project: 'ChocolateBliss' },
 
-  // Project 3 images - NextGen - Crypto Exchange
+  // NextGen Exchange
   { id: 'p3_1', src: images.project3_1, alt: 'NextGen Exchange Screenshot 1', project: 'NextGen Exchange' },
   { id: 'p3_2', src: images.project3_2, alt: 'NextGen Exchange Screenshot 2', project: 'NextGen Exchange' },
   { id: 'p3_3', src: images.project3_3, alt: 'NextGen Exchange Screenshot 3', project: 'NextGen Exchange' },
@@ -186,7 +189,7 @@ export const galleryImages: GalleryImage[] = [
   { id: 'p3_16', src: images.project3_16, alt: 'NextGen Exchange Screenshot 16', project: 'NextGen Exchange' },
   { id: 'p3_17', src: images.project3_17, alt: 'NextGen Exchange Screenshot 17', project: 'NextGen Exchange' },
 
-  // Project 4 images - EventNest
+  // EventNest
   { id: 'p4_1', src: images.project4_1, alt: 'EventNest Screenshot 1', project: 'EventNest' },
   { id: 'p4_2', src: images.project4_2, alt: 'EventNest Screenshot 2', project: 'EventNest' },
   { id: 'p4_3', src: images.project4_3, alt: 'EventNest Screenshot 3', project: 'EventNest' },
@@ -205,9 +208,8 @@ export const galleryImages: GalleryImage[] = [
   { id: 'p4_16', src: images.project4_16, alt: 'EventNest Screenshot 16', project: 'EventNest' },
   { id: 'p4_17', src: images.project4_17, alt: 'EventNest Screenshot 17', project: 'EventNest' },
   { id: 'p4_18', src: images.project4_18, alt: 'EventNest Screenshot 18', project: 'EventNest' },
-  { id: 'p4_19', src: images.project4_19, alt: 'EventNest Screenshot 19', project: 'EventNest' },
 
-  // Project 5 images - LearnSphere
+  // LearnSphere
   { id: 'p5_1', src: images.project5_1, alt: 'LearnSphere Screenshot 1', project: 'LearnSphere' },
   { id: 'p5_2', src: images.project5_2, alt: 'LearnSphere Screenshot 2', project: 'LearnSphere' },
   { id: 'p5_3', src: images.project5_3, alt: 'LearnSphere Screenshot 3', project: 'LearnSphere' },
@@ -217,13 +219,37 @@ export const galleryImages: GalleryImage[] = [
   { id: 'p5_7', src: images.project5_7, alt: 'LearnSphere Screenshot 7', project: 'LearnSphere' },
   { id: 'p5_8', src: images.project5_8, alt: 'LearnSphere Screenshot 8', project: 'LearnSphere' },
 
-  // Project 6 images - Platypus Custom Dashboard
-  { id: 'p6_1', src: images.project6_1, alt: 'Custom Dashboard  Screenshot 1', project: 'Custom Dashboard ' },
-  { id: 'p6_2', src: images.project6_2, alt: 'Custom Dashboard  Screenshot 2', project: 'Custom Dashboard ' },
-  { id: 'p6_3', src: images.project6_3, alt: 'Custom Dashboard  Screenshot 3', project: 'Custom Dashboard ' },
-  { id: 'p6_4', src: images.project6_4, alt: 'Custom Dashboard  Screenshot 4', project: 'Custom Dashboard ' },
-  { id: 'p6_5', src: images.project6_5, alt: 'Custom Dashboard  Screenshot 5', project: 'Custom Dashboard ' },
-  { id: 'p6_6', src: images.project6_6, alt: 'Custom Dashboard  Screenshot 6', project: 'Custom Dashboard ' },
-  { id: 'p6_7', src: images.project6_7, alt: 'Custom Dashboard  Screenshot 7', project: 'Custom Dashboard ' },
+  // Custom Dashboard
+  { id: 'p6_1', src: images.project6_1, alt: 'Custom Dashboard Screenshot 1', project: 'Custom Dashboard' },
+  { id: 'p6_2', src: images.project6_2, alt: 'Custom Dashboard Screenshot 2', project: 'Custom Dashboard' },
+  { id: 'p6_3', src: images.project6_3, alt: 'Custom Dashboard Screenshot 3', project: 'Custom Dashboard' },
+  { id: 'p6_4', src: images.project6_4, alt: 'Custom Dashboard Screenshot 4', project: 'Custom Dashboard' },
+  { id: 'p6_5', src: images.project6_5, alt: 'Custom Dashboard Screenshot 5', project: 'Custom Dashboard' },
+  { id: 'p6_6', src: images.project6_6, alt: 'Custom Dashboard Screenshot 6', project: 'Custom Dashboard' },
+  { id: 'p6_7', src: images.project6_7, alt: 'Custom Dashboard Screenshot 7', project: 'Custom Dashboard' },
 
+  // ApnaHimachal
+  { id: 'p7_1', src: images.project7_1, alt: 'ApnaHimachal Screenshot 1', project: 'ApnaHimachal' },
+  { id: 'p7_2', src: images.project7_2, alt: 'ApnaHimachal Screenshot 2', project: 'ApnaHimachal' },
+  { id: 'p7_3', src: images.project7_3, alt: 'ApnaHimachal Screenshot 3', project: 'ApnaHimachal' },
+
+  // MyAdvanceSolutions
+  { id: 'p8_1', src: images.project8_1, alt: 'MyAdvanceSolutions Screenshot 1', project: 'MyAdvanceSolutions' },
+  { id: 'p8_2', src: images.project8_2, alt: 'MyAdvanceSolutions Screenshot 2', project: 'MyAdvanceSolutions' },
+  { id: 'p8_3', src: images.project8_3, alt: 'MyAdvanceSolutions Screenshot 3', project: 'MyAdvanceSolutions' },
+
+  // ParaClean
+  { id: 'p9_1', src: images.project9_1, alt: 'ParaClean Screenshot 1', project: 'ParaClean' },
+  { id: 'p9_2', src: images.project9_2, alt: 'ParaClean Screenshot 2', project: 'ParaClean' },
+  { id: 'p9_3', src: images.project9_3, alt: 'ParaClean Screenshot 3', project: 'ParaClean' },
+
+  // Survey
+  { id: 'p10_1', src: images.project10_1, alt: 'Survey Screenshot 1', project: 'Survey' },
+  { id: 'p10_2', src: images.project10_2, alt: 'Survey Screenshot 2', project: 'Survey' },
+  { id: 'p10_3', src: images.project10_3, alt: 'Survey Screenshot 3', project: 'Survey' },
+
+  // ATech
+  { id: 'p11_1', src: images.project11_1, alt: 'ATech Screenshot 1', project: 'ATech' },
+  { id: 'p11_2', src: images.project11_2, alt: 'ATech Screenshot 2', project: 'ATech' },
+  { id: 'p11_3', src: images.project11_3, alt: 'ATech Screenshot 3', project: 'ATech' },
 ];
